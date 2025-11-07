@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-labelledby="legalTitle">
+  <title id="legalTitle">Legal and Regulatory Compliance</title>
+  <path d="M12 2l7 4v6c0 5-3.5 9-7 10-3.5-1-7-5-7-10V6l7-4z" fill="#ffffff" stroke="#0f172a"/>
+  <path d="M9 12h6" stroke="#0f172a"/>
+  <path d="M10 14a2 2 0 1 0 4 0" stroke="#0b6cf5" fill="none"/>
+  <path d="M8 7c.667 1.333 2 2 4 2s3.333-.667 4-2" stroke="#0f172a" fill="none"/>
+</svg>

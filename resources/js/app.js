@@ -1,4 +1,46 @@
-import './bootstrap';
+import "./bootstrap";
+// import Swiper bundle with all modules installed
+import Swiper from "swiper/bundle";
+
+// import styles bundle
+import "swiper/css/bundle";
+
+const swiper = new Swiper(".swiper", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    autoplay:{
+        delay: 5000
+    },
+
+    // If we need pagination
+    pagination: {
+        el: ".swiper-pagination",
+        clickable:true
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: ".swiper-scrollbar",
+    },
+    on: {
+        init: () => {
+            const pagination = document.querySelector(".swiper-pagination");
+            pagination.classList.add(
+                "absolute",
+                "top-1/2",
+                "left-[200px]",
+                "-translate-y-1/2"
+            );
+        },
+    },
+});
 
 document.addEventListener("DOMContentLoaded", () => {
     const menuToggle = document.getElementById("menu-toggle");
@@ -28,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", () => {
         const scrollY = window.scrollY;
         const vh = window.innerHeight;
-        console.log("View port height", vh)
+        console.log("View port height", vh);
 
         if (scrollY < vh * 1.5) {
             navbar.style.backgroundColor = "#0f0f2f";
@@ -46,4 +88,3 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
-
