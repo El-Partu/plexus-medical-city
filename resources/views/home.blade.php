@@ -18,20 +18,50 @@
         @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
             @vite(['resources/css/app.css', 'resources/js/app.js'])
         @endif
+        <style>
+            .swiper-pagination {
+                display: flex !important;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row !important;
+                gap: 0.5rem;
+                position: absolute !important;
+                bottom: 1rem;
+                left: 50%;
+                transform: translateX(-50%);
+                width: auto;
+                height: auto;
+                z-index: 10;
+            }
+
+            .swiper-pagination-bullet {
+                width: 10px;
+                height: 10px;
+                background-color: rgba(255, 255, 255, 0.5);
+                opacity: 1;
+                border-radius: 50%;
+                transition: all 0.3s ease;
+            }
+
+            .swiper-pagination-bullet-active {
+                background-color: #3b82f6;
+                /* Tailwind blue-500 */
+            }
+        </style>
     </head>
 
     <body class="font-sans">
         <div class="min-h-screen bg-[#B8BDCA]  md:pt-[100px]">
-            <header class="relative bg-white p">
+            <header class="relative bg-white">
                 <x-navbar />
             </header>
             <!-- Slider main container -->
             <div>
 
             </div>
-            <div class="swiper h-screen">
+            <div class="hero-swiper swiper h-screen relative">
                 <!-- Additional required wrapper -->
-                <div class="swiper-wrapper relative">
+                <div class="swiper-wrapper ">
                     <!-- Slides -->
                     <div class="swiper-slide">
                         <div class="flex md:max-w-[1024px] mx-auto items-center h-[80vh]">
@@ -57,11 +87,11 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="flex md:max-w-[1024px] mx-auto items-center h-[80vh]">
-                            <div class=" md:max-w-md pt-16 space-y-4">
+                            <div class=" md:max-w-md pt-16 pb-10 space-y-4">
                                 <h1 class="font-[Calligraffitti] text-[8rem]">Mission</h1>
                                 <div class="w-[95%] ">
                                     <div
-                                         class="bg-[#192A5599] flex justify-between items-center px-8 py-4 rounded-[20px]">
+                                         class="bg-[#192A5599] flex justify-between items-center px-8 py-2 rounded-[20px]">
                                         <img class="block w-[40px]" src="{{ asset('/assets/images/check.svg') }}"
                                              alt="Check mark">
                                         <p class="w-[70%] text-white">Provide world-class surgical and medical care.</p>
@@ -69,7 +99,7 @@
                                 </div>
                                 <div class="w-[95%]">
                                     <div
-                                         class="bg-[#192A5599] flex justify-between items-center px-8 py-4 rounded-[20px]">
+                                         class="bg-[#192A5599] flex justify-between items-center px-8 py-2 rounded-[20px]">
                                         <img class="block w-[40px]" src="{{ asset('/assets/images/check.svg') }}"
                                              alt="Check mark">
                                         <p class="w-[70%] text-white">Tain healthcare professionals through innovation,
@@ -78,7 +108,7 @@
                                 </div>
                                 <div class="w-[95%]">
                                     <div
-                                         class="bg-[#192A5599] flex justify-between items-center px-8 py-4 rounded-[20px]">
+                                         class="bg-[#192A5599] flex justify-between items-center px-8 py-2 rounded-[20px]">
                                         <img class="block w-[40px]" src="{{ asset('/assets/images/check.svg') }}"
                                              alt="Check mark">
                                         <p class="w-[70%] text-white">Use modern, sustainable, and advanced technology.
@@ -87,21 +117,17 @@
                                 </div>
                             </div>
                             <div class="absolute right-0 -top-[40px]">
-                                <img class="h-[800px] w-[800px]"
+                                <img class="h-[790px] w-[800px]"
                                      src="{{ asset('/assets/images/doctors_discussion_table.svg') }}"
                                      alt="Doctors having a group Hi-five">
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="hero-swiper swiper-pagination "></div>
                 <!-- If we need navigation buttons -->
-                <div class=" ">
-                    <div class="swiper-pagination "></div>
-                </div>
-                <div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
 
                 <!-- If we need scrollbar -->
                 {{-- <div class="swiper-scrollbar"></div> --}}
@@ -112,9 +138,9 @@
             <section class="min-h-screen bg-linear-to-b from-[#1A2D98E5] to-[#142244] pt-30 pb-10">
                 <div class="space-y-25">
                     <h1 class="font-[Calligraffitti] text-6xl text-white text-center">What we will be building</h1>
-                    <div class="md:max-w-[900px] grid md:grid-cols-3 mx-auto gap-15">
+                    <div class="md:max-w-[1000px] grid md:grid-cols-3 mx-auto gap-15">
                         <div
-                             class="border border-white/10 bg-[url(/public/assets/images/bg-heart.svg)] h-[30vh] bg-no-repeat  bg-contain bg-center bg-[#f3f3f3] rounded-[20px] p-6">
+                             class="border border-white/10 bg-[url(/public/assets/images/bg-heart.svg)] min-h-[30vh] bg-no-repeat  bg-contain bg-center bg-[#f3f3f3] rounded-[20px] p-6">
                             <img class="block ml-auto w-[20px]" src="{{ asset('assets/images/arrow-icon.svg') }}"
                                  alt="Arrow pointer">
                             <div class="space-y-6">
@@ -127,7 +153,7 @@
                         </div>
 
                         <div
-                             class="border border-white/10 bg-[url(/public/assets/images/bg-six-nine.svg)] h-[30vh] bg-no-repeat  bg-contain bg-center bg-[#f3f3f3] rounded-[20px] p-6">
+                             class="border border-white/10 bg-[url(/public/assets/images/bg-six-nine.svg)] min-h-[30vh] bg-no-repeat  bg-contain bg-center bg-[#f3f3f3] rounded-[20px] p-6">
                             <img class="block ml-auto w-[20px]" src="{{ asset('assets/images/arrow-icon.svg') }}"
                                  alt="Arrow pointer">
                             <div class="space-y-6">
@@ -139,7 +165,7 @@
                         </div>
 
                         <div
-                             class="border border-white/10 bg-[url(/public/assets/images/bg-doctors-surgery.svg)] h-[30vh] bg-no-repeat  bg-contain bg-center bg-[#f3f3f3] rounded-[20px] p-6">
+                             class="border border-white/10 bg-[url(/public/assets/images/bg-doctors-surgery.svg)] min-h-[30vh] bg-no-repeat  bg-contain bg-center bg-[#f3f3f3] rounded-[20px] p-6">
                             <img class="block ml-auto w-[20px]" src="{{ asset('assets/images/arrow-icon.svg') }}"
                                  alt="Arrow pointer">
                             <div class="space-y-6">
@@ -152,7 +178,7 @@
                         </div>
 
                         <div
-                             class="border border-white/10 bg-[url(/public/assets/images/bg-ambulance-light.svg)] h-[30vh] bg-no-repeat  bg-contain bg-center bg-[#f3f3f3] rounded-[20px] p-6">
+                             class="border border-white/10 bg-[url(/public/assets/images/bg-ambulance-light.svg)] min-h-[30vh] bg-no-repeat  bg-contain bg-center bg-[#f3f3f3] rounded-[20px] p-6">
                             <img class="block ml-auto w-[20px]" src="{{ asset('assets/images/arrow-icon.svg') }}"
                                  alt="Arrow pointer">
                             <div class="space-y-6">
@@ -164,7 +190,7 @@
                         </div>
 
                         <div
-                             class="border border-white/10 bg-[url(/public/assets/images/bg-women-child.svg)] h-[30vh] bg-no-repeat  bg-contain bg-center bg-[#f3f3f3] rounded-[20px] p-6">
+                             class="border border-white/10 bg-[url(/public/assets/images/bg-women-child.svg)] min-h-[30vh] bg-no-repeat  bg-contain bg-center bg-[#f3f3f3] rounded-[20px] p-6">
                             <img class="block ml-auto w-[20px]" src="{{ asset('assets/images/arrow-icon.svg') }}"
                                  alt="Arrow pointer">
                             <div class="space-y-6">
@@ -176,7 +202,7 @@
                         </div>
 
                         <div
-                             class="border border-white/10 bg-[url(/public/assets/images/bg-teaching.svg)] h-[30vh] bg-no-repeat  bg-contain bg-center bg-[#f3f3f3] rounded-[20px] p-6">
+                             class="border border-white/10 bg-[url(/public/assets/images/bg-teaching.svg)] min-h-[30vh] bg-no-repeat  bg-contain bg-center bg-[#f3f3f3] rounded-[20px] p-6">
                             <img class="block ml-auto w-[20px]" src="{{ asset('assets/images/arrow-icon.svg') }}"
                                  alt="Arrow pointer">
                             <div class="space-y-6">
@@ -188,30 +214,161 @@
                         </div>
                     </div>
 
-                    <div class="md:max-w-[900px] mx-auto">
-                        <!-- Slider container -->
-                        <div class="swiper mySwiper w-full px-10">
-                            <!-- Wrapper -->
-                            <div class="swiper-wrapper">
-                                <div
-                                     class="swiper-slide bg-blue-500 text-white flex items-center justify-center rounded-xl text-3xl font-semibold">
-                                    Slide 1</div>
-                                <div
-                                     class="swiper-slide bg-green-500 text-white flex items-center justify-center rounded-xl text-3xl font-semibold">
-                                    Slide 2</div>
-                                <div
-                                     class="swiper-slide bg-purple-500 text-white flex items-center justify-center rounded-xl text-3xl font-semibold">
-                                    Slide 3</div>
+                    {{-- <div class="md:max-w-[900px] mx-auto">
+                        <!-- gallery-swiper.blade.php -->
+                        <div class="relative w-full max-w-6xl mx-auto py-12">
+                            <div class="swiper gallery-swiper">
+                                <div class="swiper-wrapper">
+                                    <!-- IMPORTANT: give each slide a fixed width so 'auto' works -->
+                                    <div
+                                         class="swiper-slide w-[300px] md:w-[360px] lg:w-[420px] rounded-2xl overflow-hidden shadow-lg bg-white">
+                                        <img class="w-full h-64 object-cover"
+                                             src="{{ asset('assets/images/plexus_trauma.jpg') }}" alt="Trauma">
+                                        <div class="p-4">
+                                            <h4 class="text-lg font-semibold">Trauma Centre</h4>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                         class="swiper-slide w-[300px] md:w-[360px] lg:w-[420px] rounded-2xl overflow-hidden shadow-lg bg-white">
+                                        <img class="w-full h-64 object-cover"
+                                             src="{{ asset('assets/images/plexus_cancer.jpg') }}" alt="Cardiology">
+                                        <div class="p-4">
+                                            <h4 class="text-lg font-semibold">Cardiology</h4>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                         class="swiper-slide w-[300px] md:w-[360px] lg:w-[420px] rounded-2xl overflow-hidden shadow-lg bg-white">
+                                        <img class="w-full h-64 object-cover"
+                                             src="{{ asset('assets/images/plexus_imaging.jpg') }}" alt="Imaging">
+                                        <div class="p-4">
+                                            <h4 class="text-lg font-semibold">Advanced Imaging</h4>
+                                        </div>
+                                    </div>
+
+                                    <!-- add more slides as needed -->
+                                </div>
+
+                                <!-- navigation inside same container (scoped selectors used in JS) -->
+                                <div class="swiper-button-prev text-white"></div>
+                                <div class="swiper-button-next text-white"></div>
+
+                                <!-- optional centered pagination wrapper (if you want pagination) -->
+                                <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 pointer-events-none">
+                                    <div class="swiper-pagination pointer-events-auto"></div>
+                                </div>
                             </div>
-
-                            <!-- Pagination -->
-                            <div class="swiper-pagination mt-6"></div>
-
-                            <!-- Navigation buttons -->
-                            <div class="swiper-button-prev text-white"></div>
-                            <div class="swiper-button-next text-white"></div>
                         </div>
 
+                    </div> --}}
+                </div>
+            </section>
+
+            {{-- why the hospital matters --}}
+            <section class="min-h-screen">
+                <div class="md:max-w-[1150px] mx-auto pt-25">
+                    <div class="space-y-8 md:max-w-[1024px] mx-auto">
+                        <h1 class="font-[Calligraffitti] text-6xl text-center">Why this hospital matters?</h1>
+                        <p class="leading-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    </div>
+                    <div
+                         class="bg-[url(/public/assets/images/female_doctor.svg)] min-h-[90vh] bg-contain bg-no-repeat bg-center grid md:grid-cols-2 pt-10 w-full pl-20 gap-y-16">
+                        <div class="space-y-4">
+                            <div class="flex space-x-4 items-center">
+                                <div
+                                     class="w-[50px] h-[50px] rounded-[50%] bg-[#ADD8E6] flex items-center justify-center">
+                                    <img class="w-[30px]" src="{{ asset('/assets/images/circled_check.svg') }}"
+                                         alt="check in a circle">
+                                </div>
+                                <h3 class="text-lg font-bold max-w-[300px]">Raises the standard of healthcare in West
+                                    Africa</h3>
+                            </div>
+                            <p class="w-[400px] leading-6">Introducing world-class medical infrastructure, advanced
+                                technologies, and clinical
+                                expertise that redefine what is possible in regional healthcare delivery.</p>
+                        </div>
+
+                        <div class="space-y-4 ml-auto">
+                            <div class="flex space-x-4 items-center">
+                                <div
+                                     class="w-[50px] h-[50px] rounded-[50%] bg-[#ADD8E6] flex items-center justify-center">
+                                    <img class="w-[30px]" src="{{ asset('/assets/images/Cancel Travel 1.svg') }}"
+                                         alt="check in a circle">
+                                </div>
+                                <h3 class="text-lg font-bold max-w-[300px]">Reduces the need for patients to travel
+                                    abroad for treatment</h3>
+                            </div>
+                            <p class="w-[400px] leading-6 pl-4">by providing the same level of specialized care and
+                                medical excellence locally, ensuring families can access lifesaving procedures without
+                                the financial and emotional strain of overseas travel.</p>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="flex space-x-4 items-center">
+                                <div
+                                     class="w-[50px] h-[50px] rounded-[50%] bg-[#ADD8E6] flex items-center justify-center">
+                                    <img class="w-[30px]" src="{{ asset('/assets/images/masked_man.svg') }}"
+                                         alt="check in a circle">
+                                </div>
+                                <h3 class="text-lg font-bold max-w-[300px]">Delivers highly specialized and complex
+                                    medical services</h3>
+                            </div>
+                            <p class="w-[400px] leading-6">Including robotic-assisted surgeries, organ transplants, and
+                                advanced cancer care, supported by multidisciplinary teams and cutting-edge research.
+                            </p>
+                        </div>
+
+                        <div class="space-y-4 ml-auto">
+                            <div class="flex space-x-4 items-center">
+                                <div
+                                     class="w-[50px] h-[50px] rounded-[50%] bg-[#ADD8E6] flex items-center justify-center">
+                                    <img class="w-[30px]" src="{{ asset('/assets/images/circled_check.svg') }}"
+                                         alt="check in a circle">
+                                </div>
+                                <h3 class="text-lg font-bold max-w-[300px]">Raises the standard of healthcare in West
+                                    Africa</h3>
+                            </div>
+                            <p class="w-[400px] leading-6 pl-4">Introducing world-class medical infrastructure,
+                                advanced technologies, and clinical
+                                expertise that redefine what is possible in regional healthcare delivery.</p>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="flex space-x-4 items-center">
+                                <div
+                                     class="w-[50px] h-[50px] rounded-[50%] bg-[#ADD8E6] flex items-center justify-center">
+                                    <img class="w-[30px]" src="{{ asset('/assets/images/circled_check.svg') }}"
+                                         alt="check in a circle">
+                                </div>
+                                <h3 class="text-lg font-bold max-w-[300px]">Raises the standard of healthcare in West
+                                    Africa</h3>
+                            </div>
+                            <p class="w-[400px] leading-6">Introducing world-class medical infrastructure, advanced
+                                technologies, and clinical
+                                expertise that redefine what is possible in regional healthcare delivery.</p>
+                        </div>
+
+                        <div class="space-y-4 ml-auto">
+                            <div class="flex space-x-4 items-center">
+                                <div
+                                     class="w-[50px] h-[50px] rounded-[50%] bg-[#ADD8E6] flex items-center justify-center">
+                                    <img class="w-[30px]"
+                                         src="{{ asset('/assets/images/fluent-mdl2_party-leader.svg') }}"
+                                         alt="check in a circle">
+                                </div>
+                                <h3 class="text-lg font-bold max-w-[300px]">Positions Ghana as a premier healthcare hub
+                                </h3>
+                            </div>
+                            <p class="w-[400px] leading-6 pl-4">in Africa by attracting international patients,
+                                top-tier medical professionals, and global research partnerships that drive innovation
+                                and strengthen the country’s reputation in medicine and science.</p>
+                        </div>
                     </div>
                 </div>
             </section>

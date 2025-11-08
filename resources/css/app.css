@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
@@ -6,23 +6,82 @@
 @source '../**/*.js';
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
 }
 
-@layer utilities{
-    .bg-plexus-day{
+@layer utilities {
+    .bg-plexus-day {
         background-image: url("/assets/images/plexus_city_day.jpg");
     }
 }
 
 .swiper-pagination-bullet {
-  @apply bg-white opacity-60 transition-opacity;
+    @apply bg-white opacity-60 transition-opacity;
 }
 .swiper-pagination-bullet-active {
-  @apply opacity-100 bg-blue-500;
+    @apply opacity-100 bg-blue-500;
 }
 .swiper-button-next,
 .swiper-button-prev {
-  @apply text-white hover:text-blue-500;
+    @apply text-white hover:text-blue-500;
+}
+
+.hero-swiper .swiper-pagination {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: row !important;
+    gap: 0.5rem !important;
+    position: absolute !important;
+    bottom: 5rem !important;
+    left: 20% !important;
+    transform: translateY(-50%) !important;
+    width: auto !important;
+    height: auto !important;
+    z-index: 10 !important;
+}
+
+.hero-swiper .swiper-pagination-bullet {
+    width: 20px !important;
+    height: 20px !important;
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    opacity: 1 !important;
+    border-radius: 50% !important;
+    transition: all 0.3s ease !important;
+}
+
+.hero-swiper .swiper-pagination-bullet-active {
+    background-color: #1A2D98 !important; /* Tailwind blue-500 */
+     width: 30px !important;
+    height: 30px !important;
+}
+
+/* ensure transform transitions are smooth and active slide pops a bit */
+.swiper-slide {
+  transition: transform 0.45s cubic-bezier(.2,.9,.2,1);
+}
+
+/* subtle pop on active slide (works with coverflow) */
+.gallery-swiper .swiper-slide.swiper-slide-active {
+  transform: scale(1.06) !important;
+  z-index: 5;
+}
+
+/* pagination / bullets (scoped) */
+.gallery-swiper .swiper-pagination {
+  display: flex !important;
+  gap: .5rem;
+  justify-content: center;
+  align-items: center;
+}
+.gallery-swiper .swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  background: rgba(255,255,255,0.6) !important;
+  border-radius: 9999px;
+}
+.gallery-swiper .swiper-pagination-bullet-active {
+  background: #3b82f6 !important;
 }
