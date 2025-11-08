@@ -87,7 +87,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="flex md:max-w-[1024px] mx-auto items-center h-[80vh]">
-                            <div class=" md:max-w-md pt-16 pb-10 space-y-4">
+                            <div class=" md:max-w-md pt-16 pb-10 space-y-2 md:space-y-4">
                                 <h1 class="font-[Calligraffitti] text-[8rem]">Mission</h1>
                                 <div class="w-[95%] ">
                                     <div
@@ -278,7 +278,7 @@
                             cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                     </div>
                     <div
-                         class="bg-[url(/public/assets/images/female_doctor.svg)] min-h-[90vh] bg-contain bg-no-repeat bg-center grid md:grid-cols-2 pt-10 w-full pl-20 gap-y-16">
+                         class="md:bg-[url(/public/assets/images/female_doctor.svg)] min-h-[90vh] bg-contain bg-no-repeat bg-center grid md:grid-cols-2 md:pt-30 w-full md:pl-20 gap-y-16">
                         <div class="space-y-4">
                             <div class="flex space-x-4 items-center">
                                 <div
@@ -328,36 +328,6 @@
                             <div class="flex space-x-4 items-center">
                                 <div
                                      class="w-[50px] h-[50px] rounded-[50%] bg-[#ADD8E6] flex items-center justify-center">
-                                    <img class="w-[30px]" src="{{ asset('/assets/images/circled_check.svg') }}"
-                                         alt="check in a circle">
-                                </div>
-                                <h3 class="text-lg font-bold max-w-[300px]">Raises the standard of healthcare in West
-                                    Africa</h3>
-                            </div>
-                            <p class="w-[400px] leading-6 pl-4">Introducing world-class medical infrastructure,
-                                advanced technologies, and clinical
-                                expertise that redefine what is possible in regional healthcare delivery.</p>
-                        </div>
-
-                        <div class="space-y-4">
-                            <div class="flex space-x-4 items-center">
-                                <div
-                                     class="w-[50px] h-[50px] rounded-[50%] bg-[#ADD8E6] flex items-center justify-center">
-                                    <img class="w-[30px]" src="{{ asset('/assets/images/circled_check.svg') }}"
-                                         alt="check in a circle">
-                                </div>
-                                <h3 class="text-lg font-bold max-w-[300px]">Raises the standard of healthcare in West
-                                    Africa</h3>
-                            </div>
-                            <p class="w-[400px] leading-6">Introducing world-class medical infrastructure, advanced
-                                technologies, and clinical
-                                expertise that redefine what is possible in regional healthcare delivery.</p>
-                        </div>
-
-                        <div class="space-y-4 ml-auto">
-                            <div class="flex space-x-4 items-center">
-                                <div
-                                     class="w-[50px] h-[50px] rounded-[50%] bg-[#ADD8E6] flex items-center justify-center">
                                     <img class="w-[30px]"
                                          src="{{ asset('/assets/images/fluent-mdl2_party-leader.svg') }}"
                                          alt="check in a circle">
@@ -372,7 +342,195 @@
                     </div>
                 </div>
             </section>
+
+            <section class="min-h-[60vh] bg-[#223CCB] py-20">
+                <div class="md:max-w-[1100px] mx-auto md:grid grid-cols-5 space-y-10">
+                    <div class="text-white flex flex-col justify-start items-center space-y-2 md:space-y-4">
+                        <img class="" src="{{ asset('/assets/images/vaadin_doctor.svg') }}"
+                             alt="Vaadin Doctor">
+                        <div class="">
+                            <p class="text-4xl font-extrabold text-center">1000+</p>
+                            <hr class="w-[70px] h-[5px] border-none bg-white mx-auto mt-2">
+                        </div>
+                        <p class="max-w-[130px] text-center">Profesional
+                            Doctors</p>
+                    </div>
+
+                    <div class="text-white flex flex-col justify-start items-center space-y-2 md:space-y-4">
+                        <img class="" src="{{ asset('/assets/images/wpf_medical-doctor.svg') }}"
+                             alt="Medical Doctor">
+                        <div class="">
+                            <p class="text-4xl font-extrabold text-center">1500+</p>
+                            <hr class="w-[70px] h-[5px] border-none bg-white mx-auto mt-2">
+                        </div>
+                        <p class="max-w-[130px] text-center">Profesional
+                            Nurses</p>
+                    </div>
+
+                    <div class="text-white flex flex-col justify-start items-center space-y-2 md:space-y-4">
+                        <img class="" src="{{ asset('/assets/images/solar_hospital-bold-duotone.svg') }}"
+                             alt="Medical Doctor">
+                        <div class="">
+                            <p class="text-4xl font-extrabold text-center">5</p>
+                            <hr class="w-[70px] h-[5px] border-none bg-white mx-auto mt-2">
+                        </div>
+                        <p class="max-w-[130px] text-center">Modern
+                            Facilities</p>
+                    </div>
+
+                    <div class="text-white flex flex-col justify-start items-center space-y-2 md:space-y-4">
+                        <img class="" src="{{ asset('/assets/images/icon-park_hospital-bed.svg') }}"
+                             alt="Medical Doctor">
+                        <div class="">
+                            <p class="text-4xl font-extrabold text-center">1000+</p>
+                            <hr class="w-[70px] h-[5px] border-none bg-white mx-auto mt-2">
+                        </div>
+                        <p class="max-w-[130px] text-center">Quality
+                            Beds</p>
+                    </div>
+
+                    <div class="text-white flex flex-col justify-start items-center space-y-2 md:space-y-4">
+                        <img class="" src="{{ asset('/assets/images/medical-icon_i-ambulance.svg') }}"
+                             alt="Medical Doctor">
+                        <div class="">
+                            <p class="text-4xl font-extrabold text-center">1000+</p>
+                            <hr class="w-[70px] h-[5px] border-none bg-white mx-auto mt-2">
+                        </div>
+                        <p class="max-w-[130px] text-center">Modern
+                            Ambulances</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="md:max-w-[1100px] min-h-screen py-16 mx-auto">
+                <div class="min-h-[60vh] border">
+                    <div class="flex justify-between">
+                        <div class="py-10 px-15 space-y-10">
+                            <h1 class="text-3xl font-bold max-w-[300px] text-center">
+                                Frequently Asked
+                                Questions</h1>
+                            <div class="flex flex-col items-center space-y-6">
+                                <div class="flex space-x-6 border-b pb-2 border-dashed">
+                                    <img src="{{ asset('/assets/images/ion_call.svg') }}" alt="Phone">
+                                    <div class="space-y-2 w-[200px]">
+                                        <p class="font-bold text-black/80 text-sm ">Contact</p>
+                                        <p class="text-xs">+233 505 687 516</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex space-x-6 border-b pb-2 border-dashed">
+                                    <img src="{{ asset('/assets/images/entypo_location.svg') }}" alt="Phone">
+                                    <div class="space-y-2 w-[200px]">
+                                        <p class="font-bold text-black/80 text-sm">Address</p>
+                                        <p class="text-xs">Ghana, Accra</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex space-x-6 border-b pb-2 border-dashed">
+                                    <img src="{{ asset('/assets/images/mdi_shop-time.svg') }}" alt="Phone">
+                                    <div class="space-y-2 w-[200px]">
+                                        <p class="font-bold text-black/80 text-sm">Working Hoours</p>
+                                        <p class="text-xs">Monday-Sunday (00:00 AM to 00:00 AM)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[50%]  space-y-4 py-10 pr-15" id="accordion">
+                            <div class="border-b border-dashed pb-5">
+                                <p
+                                   class="accordion-header w-full flex justify-between px-4 py-2font-semibold">
+                                    Question 1
+                                    <img src="{{ asset('assets/images/iconamoon_arrow-up-2-thin.svg') }}"
+                                         alt="Arrow Up">
+                                </p>
+                                <div class="accordion-content hidden p-4 border-t">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla eos voluptatibus
+                                    nobis, libero numquam ipsam repellendus, quod neque commodi officiis non hic
+                                    voluptatum illo et reiciendis facere iste sapiente amet.
+                                </div>
+                            </div>
+
+                            <div class="border-b border-dashed pb-5">
+                                <p
+                                   class="accordion-header w-full flex justify-between px-4 py-2font-semibold">
+                                    Question 2
+                                    <img src="{{ asset('assets/images/iconamoon_arrow-up-2-thin.svg') }}"
+                                         alt="Arrow Up">
+                                </p>
+                                <div class="accordion-content hidden p-4 border-t">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla eos voluptatibus
+                                    nobis, libero numquam ipsam repellendus, quod neque commodi officiis non hic
+                                    voluptatum illo et reiciendis facere iste sapiente amet.
+                                </div>
+                            </div>
+
+                            <div class="border-b border-dashed pb-5">
+                                <p
+                                   class="accordion-header w-full flex justify-between px-4 py-2font-semibold">
+                                    Question 3
+                                    <img src="{{ asset('assets/images/iconamoon_arrow-up-2-thin.svg') }}"
+                                         alt="Arrow Up">
+                                </p>
+                                <div class="accordion-content hidden p-4 border-t">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla eos voluptatibus
+                                    nobis, libero numquam ipsam repellendus, quod neque commodi officiis non hic
+                                    voluptatum illo et reiciendis facere iste sapiente amet.
+                                </div>
+                            </div>
+
+                            <div class="border-b border-dashed pb-5">
+                                <p
+                                   class="accordion-header w-full flex justify-between px-4 py-2font-semibold">
+                                    Question 4
+                                    <img src="{{ asset('assets/images/iconamoon_arrow-up-2-thin.svg') }}"
+                                         alt="Arrow Up">
+                                </p>
+                                <div class="accordion-content hidden p-4 border-t">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla eos voluptatibus
+                                    nobis, libero numquam ipsam repellendus, quod neque commodi officiis non hic
+                                    voluptatum illo et reiciendis facere iste sapiente amet.
+                                </div>
+                            </div>
+
+                            <div class="border-b border-dashed pb-5">
+                                <p
+                                   class="accordion-header w-full flex justify-between px-4 py-2font-semibold">
+                                    Question 5
+                                    <img src="{{ asset('assets/images/iconamoon_arrow-up-2-thin.svg') }}"
+                                         alt="Arrow Up">
+                                </p>
+                                <div class="accordion-content hidden p-4 border-t">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla eos voluptatibus
+                                    nobis, libero numquam ipsam repellendus, quod neque commodi officiis non hic
+                                    voluptatum illo et reiciendis facere iste sapiente amet.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
         </main>
+
+        <script>
+            const headers = document.querySelectorAll(".accordion-header");
+
+            headers.forEach((header) => {
+                header.addEventListener("click", () => {
+                    const openItem = document.querySelector(".accordion-content:not(.hidden)");
+                    const currentContent = header.nextElementSibling;
+
+                    if (openItem && openItem !== currentContent) {
+                        openItem.classList.add("hidden");
+                        openItem.previousElementSibling.querySelector("span").textContent = "+";
+                    }
+
+                    currentContent.classList.toggle("hidden");
+                    const sign = header.querySelector("span");
+                    sign.textContent = currentContent.classList.contains("hidden") ? "+" : "−";
+                });
+            });
+        </script>
     </body>
 
 </html>
