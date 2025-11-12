@@ -342,7 +342,7 @@
         </div>
     </section>
 
-    <section class="md:max-w-[1100px] min-h-[350vh] md:min-h-[220vh] py-16 mx-auto">
+    <section class="md:max-w-[1100px] min-h-[350vh] md:min-h-[130vh] py-20 mx-auto">
         <div class="min-h-[60vh] border">
             <div class="md:flex md:justify-between">
                 <div class="py-10 px-15 space-y-10">
