@@ -85,3 +85,8 @@
 .gallery-swiper .swiper-pagination-bullet-active {
   background: #3b82f6 !important;
 }
+
+.clip-path--1{
+    /* clip-path: url("/public/assets/images/Ellipse11.svg") */
+    clip-path: ellipse(130px 140px at 10% 20%);
+}

@@ -10,8 +10,8 @@
                        href="{{ route('home') }}">Home</a>
                     <a class="{{ Request::is('about-us') ? 'px-6 py-1 rounded-[20px] bg-white text-black' : 'px-6 py-1 rounded-[20px] border border-white backdrop-blur-lg text-white hover:bg-white hover:text-black transition-colors bg-transparent' }} "
                        href="{{ route('about-us') }}">About Us</a>
-                    <a class="px-6 py-1 rounded-[20px] border border-white backdrop-blur-lg text-white hover:bg-white hover:text-black transition-colors bg-transparent"
-                       href="#">Contact Us</a>
+                        <a class="{{ Request::is('contact-us') ? 'px-6 py-1 rounded-[20px] bg-white text-black' : 'px-6 py-1 rounded-[20px] border border-white backdrop-blur-lg text-white hover:bg-white hover:text-black transition-colors bg-transparent' }} "
+                       href="{{ route('contact-us') }}">Contact Us</a>
                 </div>
                 <div>
                     <a class="px-6 py-1 rounded-[20px] border border-white backdrop-blur-lg text-white hover:bg-white hover:text-black transition-colors bg-transparent"
