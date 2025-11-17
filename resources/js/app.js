@@ -1,6 +1,7 @@
 import "./bootstrap";
 // import Swiper bundle with all modules installed
 import Swiper from "swiper/bundle";
+import { CountUp } from "countup.js";
 
 
 // import styles bundle
@@ -68,3 +69,5 @@ const swiper = new Swiper(".hero-swiper", {
 
 // If your slides are injected dynamically later, run:
 // gallery.update();
+
+

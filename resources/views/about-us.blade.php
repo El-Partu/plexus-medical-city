@@ -1,15 +1,15 @@
 <x-main-layout>
     <section
-             class="bg-[linear-gradient(to_bottom,_#192A55_20%,_#707FA5_60%,_#284388_80%,_#375CBB_100%)] min-h-[200vh] md:min-h-[180vh] pt-45">
-        <div class="md:w-[80%] mx-auto flex justify-between items-start">
-            <div class="bg-white rounded-[20px] px-10 py-8 lg:w-[60%] space-y-5">
-                <h1 class="font-[Calligraffitti] text-6xl">About us</h1>
-                <p class="leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis itaque error
+             class="bg-[linear-gradient(to_bottom,_#192A55_20%,_#707FA5_60%,_#284388_80%,_#375CBB_100%)] min-h-[200vh] md:min-h-[180vh] pt-45 pb-20">
+        <div class="md:w-[80%] mx-auto flex justify-between items-start"  >
+            <div class="lg:bg-white lg:rounded-[20px] px-4 lg:px-10 py-8 lg:w-[60%] space-y-5">
+                <h1 class="font-[Calligraffitti] text-6xl text-center md:text-left text-white md:text-black" data-aos="fade-up" duration="500">About us</h1>
+                <p class="leading-7 text-white/90" data-aos="fade-up" duration="2000">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis itaque error
                     voluptatibus modi
                     commodi accusantium quam, aperiam molestiae perferendis qui ut eveniet fugiat, voluptatum recusandae
                     saepe blanditiis consequatur ad tempore.</p>
                 <div class="space-y-4">
-                    <div class="flex space-x-5 px-4 py-4 shadow-sm  text-black/80 rounded-[20px] bg-[#ADD8E633]">
+                    <div data-aos="fade-up" duration="1000" class="flex space-x-5 px-4 py-4 shadow-sm  text-black/80 rounded-[20px] bg-[#ADD8E633]">
                         <img class="w-[40px]" src="{{ asset('/assets/images/material-symbols_strategy.svg') }}"
                              alt="Material Symbol">
                         <p class="leading-6">Redefine surgical excellence by offering advanced, high-precision
@@ -17,14 +17,14 @@
                             that meet and exceed global standards of safety and care.</p>
 
                     </div>
-                    <div class="flex space-x-5 px-4 py-4 shadow-sm  text-black/80 rounded-[20px] bg-[#ADD8E633]">
+                    <div data-aos="fade-up" duration="1000" class="flex space-x-5 px-4 py-4 shadow-sm  text-black/80 rounded-[20px] bg-[#ADD8E633]">
                         <img class="w-[40px]" src="{{ asset('/assets/images/material-symbols_strategy.svg') }}"
                              alt="Material Symbol">
                         <p class="leading-6">Create a model of efficiency where resources from hospital beds to
                             technology are optimized to deliver seamless, patient-centered care.</p>
 
                     </div>
-                    <div class="flex space-x-5 px-4 py-4 shadow-sm  text-black/80 rounded-[20px] bg-[#ADD8E633]">
+                    <div data-aos="fade-up" duration="1000" class="flex space-x-5 px-4 py-4 shadow-sm  text-black/80 rounded-[20px] bg-[#ADD8E633]">
                         <img class="w-[40px]" src="{{ asset('/assets/images/material-symbols_strategy.svg') }}"
                              alt="Material Symbol">
                         <p class="leading-6">Empower the next generation of healthcare leaders by training over 500
@@ -32,14 +32,14 @@
                         </p>
 
                     </div>
-                    <div class="flex space-x-5 px-4 py-4 shadow-sm  text-black/80 rounded-[20px] bg-[#ADD8E633]">
+                    <div data-aos="fade-up" duration="1000" class="flex space-x-5 px-4 py-4 shadow-sm  text-black/80 rounded-[20px] bg-[#ADD8E633]">
                         <img class="w-[40px]" src="{{ asset('/assets/images/material-symbols_strategy.svg') }}"
                              alt="Material Symbol">
                         <p class="leading-6">Build long-term financial strength to ensure the hospital’s growth,
                             independence, and ability to reinvest in medical advancement.</p>
 
                     </div>
-                    <div class="flex space-x-5 px-4 py-4 shadow-sm  text-black/80 rounded-[20px] bg-[#ADD8E633]">
+                    <div data-aos="fade-up" duration="1000" class="flex space-x-5 px-4 py-4 shadow-sm  text-black/80 rounded-[20px] bg-[#ADD8E633]">
                         <img class="w-[40px]" src="{{ asset('/assets/images/material-symbols_strategy.svg') }}"
                              alt="Material Symbol">
                         <p class="leading-6">Build long-term financial strength to ensure the hospital’s growth,
@@ -80,14 +80,14 @@
     </section>
 
     <section class="min-h-[140vh] bg-[#707FA5] py-16 text-center ">
-        <h1 class="text-6xl font-[Calligraffitti] text-white">History</h1>
+        <h1 class="text-6xl font-[Calligraffitti] text-white" data-aos="fade-up" duration="1000" data-aos-delay="800">History</h1>
         <div class="flex ">
             <div class="mt-14 space-y-16">
-                <div class="md:w-[60%] text-white/80 rounded-[20px] px-5 py-10 bg-[#132272] mx-auto">Lorem ipsum dolor
+                <div data-aos="fade-up" duration="1000" class="md:w-[60%] text-white/80 rounded-[20px] px-5 py-10 bg-[#132272] mx-auto">Lorem ipsum dolor
                     sit amet consectetur adipisicing elit. Sint minus distinctio quidem dicta
                     exercitationem eos nostrum asperiores, et praesentium possimus esse aliquam quis laudantium dolore
                     vero, quaerat error? At, corrupti?</div>
-                <div
+                <div data-aos="fade-up" duration="1000"
                      class="md:w-[60%] text-white/80 rounded-[20px] px-5 py-10 md:translate-x-[20rem] mx-auto bg-[#1A2D98]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint minus distinctio quidem dicta
                     exercitationem eos nostrum asperiores, et praesentium possimus esse aliquam quis laudantium dolore
@@ -100,11 +100,11 @@
     </section>
 
     <section
-             class="bg-[url(/public/assets/images/d327099868ff2a0e580ee2a61d2c36c5-removebg-preview1.svg)] bg-contain min-h-[140vh] pt-16">
+             class="bg-[url(/public/assets/images/d327099868ff2a0e580ee2a61d2c36c5-removebg-preview1.svg)] bg-contain min-h-[140vh] py-16">
         <div class="lg:max-w-[80%] mx-auto space-y-16">
-            <h1 class="text-6xl font-[Calligraffitti] text-center">Strategic Plan and Roadmap</h1>
+            <h1 class="text-6xl font-[Calligraffitti] text-center" data-aos="zoom-in-up" duration="4000">Strategic Plan and Roadmap</h1>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[]">
-                <div class="border rounded-[20px] px-16 py-6 bg-[#0E87CC] text-white space-y-4">
+                <div data-aos="zoom-in-up" duration="1000" data-aos-delay="600" class="border rounded-[20px] px-10 md:px-16 py-6 bg-[#0E87CC] text-white space-y-4">
                     <h3 class="text-2xl">Financial Plan</h3>
                     <ol class="list-disc space-y-3 ">
                         <li>
@@ -125,7 +125,7 @@
                     </ol>
                 </div>
 
-                <div class="border rounded-[20px] px-16 py-6 bg-[#0E87CC] text-white space-y-4">
+                <div data-aos="zoom-in-up" duration="1000" data-aos-delay="600" class="border rounded-[20px] px-10 md:px-16 py-6 bg-[#0E87CC] text-white space-y-4">
                     <h3 class="text-2xl">Legal and Regulatory Compliance</h3>
                     <ol class="list-disc space-y-3 ">
                         <li>
@@ -146,7 +146,7 @@
                     </ol>
                 </div>
 
-                <div class="border rounded-[20px] px-16 py-6 bg-[#0E87CC] text-white space-y-4">
+                <div data-aos="zoom-in-up" duration="1000" data-aos-delay="600" class="border rounded-[20px] px-10 md:px-16 py-6 bg-[#0E87CC] text-white space-y-4">
                     <h3 class="text-2xl">Marketing and
                         Patient Engagement</h3>
                     <ol class="list-disc space-y-3 ">
@@ -165,7 +165,7 @@
                     </ol>
                 </div>
 
-                <div class="border rounded-[20px] px-16 py-6 bg-[#0E87CC] text-white space-y-4">
+                <div data-aos="zoom-in-up" duration="1000" data-aos-delay="600" class="border rounded-[20px] px-10 md:px-16 py-6 bg-[#0E87CC] text-white space-y-4">
                     <h3 class="text-2xl">Monitoring and Evaluation</h3>
                     <ol class="list-disc space-y-3 ">
                         <li>
@@ -183,7 +183,7 @@
                     </ol>
                 </div>
 
-                <div class="border rounded-[20px] px-16 py-6 bg-[#0E87CC] text-white space-y-4">
+                <div data-aos="zoom-in-up" duration="1000" data-aos-delay="600" class="border rounded-[20px] px-10 md:px-16 py-6 bg-[#0E87CC] text-white space-y-4">
                     <h3 class="text-2xl">Long Term Vision for Excellence</h3>
                     <ol class="list-disc space-y-3 ">
                         <li>
@@ -201,7 +201,7 @@
                     </ol>
                 </div>
 
-                <div class="border rounded-[20px] px-16 py-6 bg-[#0E87CC] text-white space-y-4">
+                <div data-aos="zoom-in-up" duration="1000" data-aos-delay="600" class="border rounded-[20px] px-10 md:px-16 py-6 bg-[#0E87CC] text-white space-y-4">
                     <h3 class="text-2xl">Expansion and Future Growth</h3>
                     <ol class="list-disc space-y-3 ">
                         <li>
@@ -223,12 +223,12 @@
         </div>
     </section>
 
-    <section class="bg-[#bbc0cecc] min-h-[140vh] pt-16">
+    <section class="bg-[#bbc0cecc] min-h-[140vh] py-16">
         <div class="lg:max-w-[80%] mx-auto space-y-20 md:space-y-10">
-            <h1 class="text-5xl text-wrap font-[calligraffitti] text-center">Implementation and Operational Management
+            <h1 data-aos="zoom-in-up" duration="4000" data-aos-delay="600" class="text-5xl text-wrap font-[calligraffitti] text-center">Implementation and Operational Management
             </h1>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <div class="relative">
+                <div class="relative" data-aos="zoom-in-up" duration="1000" data-aos-delay="600">
                     <h1 class="hidden md:block text-[14rem] font-extrabold text-center text-[#132272] tracking-wider">01
                     </h1>
                     <div
@@ -258,7 +258,7 @@
                     </div>
                 </div>
 
-                <div class="relative">
+                <div class="relative" data-aos="zoom-in-up" duration="1000" data-aos-delay="600">
                     <h1 class="hidden md:block text-[14rem] font-extrabold text-center text-[#2744E5] tracking-wider">
                         02</h1>
                     <div
@@ -290,7 +290,7 @@
                     </div>
                 </div>
 
-                <div class="relative">
+                <div class="relative" data-aos="zoom-in-up" duration="1000" data-aos-delay="600">
                     <h1 class="hidden md:block text-[14rem] font-extrabold text-center text-[#1A2D98] tracking-wider">
                         03</h1>
                     <div
@@ -321,7 +321,7 @@
                     </div>
                 </div>
 
-                <div class="relative">
+                <div class="relative" data-aos="zoom-in-up" duration="1000" data-aos-delay="600">
                     <h1 class="hidden md:block text-[14rem] font-extrabold text-center text-[#BDC7FF] tracking-wider">
                         04</h1>
                     <div
@@ -352,7 +352,7 @@
                     </div>
                 </div>
 
-                <div class="relative">
+                <div class="relative" data-aos="zoom-in-up" duration="1000" data-aos-delay="600">
                     <h1 class="hidden md:block text-[14rem] font-extrabold text-center text-[#B5B5B8] tracking-wider">
                         05</h1>
                     <div
@@ -383,7 +383,7 @@
                     </div>
                 </div>
 
-                <div class="relative">
+                <div class="relative" data-aos="zoom-in-up" duration="1000" data-aos-delay="600">
                     <h1 class="hidden md:block text-[14rem] font-extrabold text-center text-[#32394A] tracking-wider">
                         06</h1>
                     <div
@@ -451,14 +451,14 @@
         </div>
     </section>
 
-    <section class="min-h-[240vh]">
+    <section class="min-h-[130vh] py-16">
         <div class="md:max-w-[85%] mx-auto space-y-16">
-            <h1 class="font-[calligraffitti] text-5xl/20 text-center text-wrap lg:max-w-[50%] mx-auto py-16 bg-white">
+            <h1 data-aos="zoom-in-up" duration="4000" class="font-[calligraffitti] text-5xl/20 text-center text-wrap lg:max-w-[50%] mx-auto py-16 bg-white">
                 Global
                 Partnership, Medical
                 Tourism and international impact</h1>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-y-50 md:gap-x-10">
-                <div class="flex relative">
+                <div class="flex relative"data-aos="zoom-in-up" duration="1000" data-aos-delay="600">
                     <h1 class="text-[35rem]/40 font-[Karantina] z-10">1</h1>
                     <div class="">
                         <h4
@@ -484,7 +484,7 @@
                     </div>
                 </div>
 
-                <div class="flex relative">
+                <div class="flex relative"data-aos="zoom-in-up" duration="1000" data-aos-delay="600">
                     <h1 class="text-[35rem]/40 font-[Karantina] z-10">2</h1>
                     <div class="">
                         <h4
@@ -510,7 +510,7 @@
                     </div>
                 </div>
 
-                <div class="flex relative">
+                <div class="flex relative"data-aos="zoom-in-up" duration="1000" data-aos-delay="600">
                     <h1 class="text-[35rem]/40 font-[Karantina] z-10">3</h1>
                     <div class="">
                         <h4
@@ -533,7 +533,7 @@
                     </div>
                 </div>
 
-                <div class="flex relative">
+                <div class="flex relative"data-aos="zoom-in-up" duration="1000" data-aos-delay="600">
                     <h1 class="text-[35rem]/40 font-[Karantina] z-10">4</h1>
                     <div class="">
                         <h4
@@ -556,7 +556,7 @@
                     </div>
                 </div>
 
-                <div class="flex relative">
+                <div class="flex relative"data-aos="zoom-in-up" duration="1000" data-aos-delay="600">
                     <h1 class="text-[35rem]/40 font-[Karantina] z-10">5</h1>
                     <div class="">
                         <h4
@@ -579,7 +579,7 @@
                     </div>
                 </div>
 
-                <div class="flex relative">
+                <div class="flex relative"data-aos="zoom-in-up" duration="1000" data-aos-delay="600">
                     <h1 class="text-[35rem]/40 font-[Karantina] z-10">6</h1>
                     <div class="">
                         <h4
@@ -602,7 +602,7 @@
                     </div>
                 </div>
 
-                <div class="flex relative">
+                <div class="flex relative"data-aos="zoom-in-up" duration="1000" data-aos-delay="600">
                     <h1 class="text-[35rem]/40 font-[Karantina] z-10">7</h1>
                     <div class="">
                         <h4
@@ -628,13 +628,13 @@
         </div>
     </section>
 
-    <section class="min-h-screen bg-[#1A2D98E5] py-20">
+    <section class="min-h-[130vh] bg-[#1A2D98E5] py-20">
         <div class="max-w-[80%] mx-auto space-y-20">
-            <h1 class="text-5xl font-[calligraffitti] text-center text-white">Budget Summary</h1>
+            <h1 class="text-5xl font-[calligraffitti] text-center text-white" data-aos="zoom-in-up" duration="4000">Budget Summary</h1>
 
             <!-- Prepare a DOM with a defined width and height for ECharts -->
             <div class="max-w-[80%] mx-auto space-y-8">
-                <div class="">
+                <div class="" data-aos="zoom-in-up" duration="1000" data-aos-delay="600" >
                     {{-- <h3 class="w-[50%] font-extrabold text-xl text-white pr-0">CAPITAL EXPENDITURE (CAPEX):</h3> --}}
                     <p class="text-left text-white/80"><span class="font-extrabold text-xl text-white mr-4">CAPITAL
                             EXPENDITURE (CAPEX):</span>Estimated between <b>US$256</b> million and <b>US$780</b>
@@ -644,7 +644,7 @@
                         medical equipment, and core facility construction.</p>
                     <div class="md:mx-auto md:w-3/4 h-[40vh]" id="main"></div>
                 </div>
-                <div class="">
+                <div class="" data-aos="zoom-in-up" duration="1000" data-aos-delay="600">
                     {{-- <h3 class="w-[50%] font-extrabold text-xl text-white pr-0">CAPITAL EXPENDITURE (CAPEX):</h3> --}}
                     <p class="text-left text-white/80"><span class="font-extrabold text-xl text-white mr-4">OPERATING
                             EXPENDITURE (OPEX):</span>Projected between <b>US$80</b> million and <b>US$130</b>million
@@ -776,9 +776,9 @@
         </div>
     </section>
 
-    <section class="min-h-[450vh] md:min-h-[400vh]">
+    <section class="min-h-[150vh]">
         <div class="py-16 bg-[#0E87CC4D] space-y-16">
-            <h1 class="lg:max-w-[38%] text-5xl/20 font-[calligraffitti] mx-auto text-center">Financial Sustainability
+            <h1 class="lg:max-w-[38%] text-5xl/20 font-[calligraffitti] mx-auto text-center" data-aos="zoom-in-up" duration="4000">Financial Sustainability
                 and
                 Long-Term Growth</h1>
             <div class="space-y-20">
@@ -786,9 +786,9 @@
                      class="relative flex flex-col items-center md:max-w-[60%] lg:max-w-[60%] mx-auto md:px-8 py-4 rounded-[20px] bg-white">
                     <div class=flex>
                         <span
-                              class="w-[20px] h-[20px] md:text-4xl font-extrabold bg-[#132272] text-white px-5 py-5  flex items-center justify-center rounded-[50%] md:min-w-[100px] md:min-h-[100px] text-center md:absolute bottom-1/6 left-2 md:top-1/2 md:-left-6 md:bottom-0 ">1</span>
+                              data-aos="flip-left" duration="1000" class="w-[20px] h-[20px] md:text-4xl font-extrabold bg-[#132272] text-white px-5 py-5  flex items-center justify-center rounded-[50%] md:min-w-[100px] md:min-h-[100px] text-center md:absolute bottom-1/6 left-2 md:top-1/2 md:-left-6 md:bottom-0 ">1</span>
                         <span
-                              class="md:absolute text-black/90 bottom-2/3 md:min-h-[12vh] md:min-w-[40%] text-center px-4 pt-2 text-2xl inline-block -right-35 rounded-[20px] content-center font-black md:text-white md:bg-[#0E87CC]">Capital
+                              data-aos="flip-left" duration="1000" class="md:absolute text-black/90 bottom-2/3 md:min-h-[12vh] md:min-w-[40%] text-center px-4 pt-2 text-2xl inline-block -right-35 rounded-[20px] content-center font-black md:text-white md:bg-[#0E87CC]">Capital
                             Investment</span>
 
                     </div>
@@ -808,9 +808,9 @@
                      class="relative flex flex-col items-center md:max-w-[60%] lg:max-w-[60%] mx-auto md:px-8 py-4 rounded-[20px] bg-white">
                     <div class=flex>
                         <span
-                              class="w-[20px] h-[20px] md:text-4xl font-extrabold bg-[#132272] text-white px-5 py-5  flex items-center justify-center rounded-[50%] md:min-w-[100px] md:min-h-[100px] text-center md:absolute bottom-1/6 left-2 md:top-1/2 md:-left-6 md:bottom-0 ">2</span>
+                              data-aos="flip-left" duration="1000" class="w-[20px] h-[20px] md:text-4xl font-extrabold bg-[#132272] text-white px-5 py-5  flex items-center justify-center rounded-[50%] md:min-w-[100px] md:min-h-[100px] text-center md:absolute bottom-1/6 left-2 md:top-1/2 md:-left-6 md:bottom-0 ">2</span>
                         <span
-                              class="md:absolute text-black/90 bottom-2/3 md:min-h-[12vh] md:min-w-[40%] text-center px-4 pt-2 text-2xl inline-block -right-35 rounded-[20px] content-center font-black md:text-white md:bg-[#0E87CC]">Running
+                              data-aos="flip-left" duration="1000" class="md:absolute text-black/90 bottom-2/3 md:min-h-[12vh] md:min-w-[40%] text-center px-4 pt-2 text-2xl inline-block -right-35 rounded-[20px] content-center font-black md:text-white md:bg-[#0E87CC]">Running
                             Costs</span>
 
                     </div>
@@ -831,9 +831,9 @@
                      class="relative flex flex-col items-center md:max-w-[60%] lg:max-w-[60%] mx-auto md:px-8 py-4 rounded-[20px] bg-white">
                     <div class=flex>
                         <span
-                              class="w-[20px] h-[20px] md:text-4xl font-extrabold bg-[#132272] text-white px-5 py-5  flex items-center justify-center rounded-[50%] md:min-w-[100px] md:min-h-[100px] text-center md:absolute bottom-1/6 left-2 md:top-1/2 md:-left-6 md:bottom-0 ">3</span>
+                              data-aos="flip-left" duration="1000" class="w-[20px] h-[20px] md:text-4xl font-extrabold bg-[#132272] text-white px-5 py-5  flex items-center justify-center rounded-[50%] md:min-w-[100px] md:min-h-[100px] text-center md:absolute bottom-1/6 left-2 md:top-1/2 md:-left-6 md:bottom-0 ">3</span>
                         <span
-                              class="md:absolute text-black/90 bottom-2/3 md:min-h-[12vh] md:min-w-[40%] text-center px-4 pt-2 text-2xl inline-block -right-35 rounded-[20px] content-center font-black md:text-white md:bg-[#0E87CC]">Sources
+                              data-aos="flip-left" duration="1000" class="md:absolute text-black/90 bottom-2/3 md:min-h-[12vh] md:min-w-[40%] text-center px-4 pt-2 text-2xl inline-block -right-35 rounded-[20px] content-center font-black md:text-white md:bg-[#0E87CC]">Sources
                             of Income</span>
 
                     </div>
@@ -860,9 +860,9 @@
                      class="relative flex flex-col items-center md:max-w-[60%] lg:max-w-[60%] mx-auto md:px-8 py-4 rounded-[20px] bg-white">
                     <div class=flex>
                         <span
-                              class="w-[20px] h-[20px] md:text-4xl font-extrabold bg-[#132272] text-white px-5 py-5  flex items-center justify-center rounded-[50%] md:min-w-[100px] md:min-h-[100px] text-center md:absolute bottom-1/6 left-2 md:top-1/2 md:-left-6 md:bottom-0 ">4</span>
+                              data-aos="flip-left" duration="1000" class="w-[20px] h-[20px] md:text-4xl font-extrabold bg-[#132272] text-white px-5 py-5  flex items-center justify-center rounded-[50%] md:min-w-[100px] md:min-h-[100px] text-center md:absolute bottom-1/6 left-2 md:top-1/2 md:-left-6 md:bottom-0 ">4</span>
                         <span
-                              class="md:absolute text-black/90 bottom-2/3 md:min-h-[12vh] md:min-w-[40%] text-center px-4 pt-2 text-2xl inline-block -right-35 rounded-[20px] content-center font-black md:text-white md:bg-[#0E87CC]">Plan
+                              data-aos="flip-left" duration="1000" class="md:absolute text-black/90 bottom-2/3 md:min-h-[12vh] md:min-w-[40%] text-center px-4 pt-2 text-2xl inline-block -right-35 rounded-[20px] content-center font-black md:text-white md:bg-[#0E87CC]">Plan
                             for Financial
                             Stability</span>
 
@@ -887,9 +887,9 @@
                      class="relative flex flex-col items-center md:max-w-[60%] lg:max-w-[60%] mx-auto md:px-8 py-4 rounded-[20px] bg-white">
                     <div class=flex>
                         <span
-                              class="w-[20px] h-[20px] md:text-4xl font-extrabold bg-[#132272] text-white px-5 py-5  flex items-center justify-center rounded-[50%] md:min-w-[100px] md:min-h-[100px] text-center md:absolute bottom-1/6 left-2 md:top-1/2 md:-left-6 md:bottom-0 ">5</span>
+                              data-aos="flip-left" duration="1000" class="w-[20px] h-[20px] md:text-4xl font-extrabold bg-[#132272] text-white px-5 py-5  flex items-center justify-center rounded-[50%] md:min-w-[100px] md:min-h-[100px] text-center md:absolute bottom-1/6 left-2 md:top-1/2 md:-left-6 md:bottom-0 ">5</span>
                         <span
-                              class="md:absolute text-black/90 bottom-2/3 md:min-h-[12vh] md:min-w-[40%] text-center px-4 pt-2 text-2xl inline-block -right-35 rounded-[20px] content-center font-black md:text-white md:bg-[#0E87CC]">Funding
+                              data-aos="flip-left" duration="1000" class="md:absolute text-black/90 bottom-2/3 md:min-h-[12vh] md:min-w-[40%] text-center px-4 pt-2 text-2xl inline-block -right-35 rounded-[20px] content-center font-black md:text-white md:bg-[#0E87CC]">Funding
                             Approach</span>
                     </div>
                     <ul class="list-disc list-inside space-y-2 font-extrabold text-black/80">
@@ -909,9 +909,9 @@
                      class="relative flex flex-col items-center md:max-w-[60%] lg:max-w-[60%] mx-auto md:px-8 py-4 rounded-[20px] bg-white">
                     <div class=flex>
                         <span
-                              class="w-[20px] h-[20px] md:text-4xl font-extrabold bg-[#132272] text-white px-5 py-5  flex items-center justify-center rounded-[50%] md:min-w-[100px] md:min-h-[100px] text-center md:absolute bottom-1/6 left-2 md:top-1/2 md:-left-6 md:bottom-0 ">6</span>
+                              data-aos="flip-left" duration="1000" class="w-[20px] h-[20px] md:text-4xl font-extrabold bg-[#132272] text-white px-5 py-5  flex items-center justify-center rounded-[50%] md:min-w-[100px] md:min-h-[100px] text-center md:absolute bottom-1/6 left-2 md:top-1/2 md:-left-6 md:bottom-0 ">6</span>
                         <span
-                              class="md:absolute text-black/90 bottom-2/3 md:min-h-[12vh] md:min-w-[40%] text-center px-4 pt-2 text-2xl inline-block -right-35 rounded-[20px] content-center font-black md:text-white md:bg-[#0E87CC]">Future
+                              data-aos="flip-left" duration="1000" class="md:absolute text-black/90 bottom-2/3 md:min-h-[12vh] md:min-w-[40%] text-center px-4 pt-2 text-2xl inline-block -right-35 rounded-[20px] content-center font-black md:text-white md:bg-[#0E87CC]">Future
                             Growth</span>
                     </div>
                     <ul class="list-disc list-inside space-y-2 font-extrabold text-black/80">
@@ -931,9 +931,9 @@
                      class="relative flex flex-col items-center md:max-w-[60%] lg:max-w-[60%] mx-auto md:px-8 py-4 rounded-[20px] bg-white">
                     <div class=flex>
                         <span
-                              class="w-[20px] h-[20px] md:text-4xl font-extrabold bg-[#132272] text-white px-5 py-5  flex items-center justify-center rounded-[50%] md:min-w-[100px] md:min-h-[100px] text-center md:absolute bottom-1/6 left-2 md:top-1/2 md:-left-6 md:bottom-0 ">7</span>
+                              data-aos="flip-left" duration="1000" class="w-[20px] h-[20px] md:text-4xl font-extrabold bg-[#132272] text-white px-5 py-5  flex items-center justify-center rounded-[50%] md:min-w-[100px] md:min-h-[100px] text-center md:absolute bottom-1/6 left-2 md:top-1/2 md:-left-6 md:bottom-0 ">7</span>
                         <span
-                              class="md:absolute text-black/90 bottom-2/3 md:min-h-[12vh] md:min-w-[40%] text-center px-4 pt-2 text-2xl inline-block -right-35 rounded-[20px] content-center font-black md:text-white md:bg-[#0E87CC]">Measuring
+                              data-aos="flip-left" duration="1000" class="md:absolute text-black/90 bottom-2/3 md:min-h-[12vh] md:min-w-[40%] text-center px-4 pt-2 text-2xl inline-block -right-35 rounded-[20px] content-center font-black md:text-white md:bg-[#0E87CC]">Measuring
                             Financial
                             Success</span>
                     </div>
@@ -957,9 +957,9 @@
                      class="relative flex flex-col items-center md:max-w-[60%] lg:max-w-[60%] mx-auto md:px-8 py-4 rounded-[20px] bg-white">
                     <div class=flex>
                         <span
-                              class="w-[20px] h-[20px] md:text-4xl font-extrabold bg-[#132272] text-white px-5 py-5  flex items-center justify-center rounded-[50%] md:min-w-[100px] md:min-h-[100px] text-center md:absolute bottom-1/6 left-2 md:top-1/2 md:-left-6 md:bottom-0 ">8</span>
+                              data-aos="flip-left" duration="1000" class="w-[20px] h-[20px] md:text-4xl font-extrabold bg-[#132272] text-white px-5 py-5  flex items-center justify-center rounded-[50%] md:min-w-[100px] md:min-h-[100px] text-center md:absolute bottom-1/6 left-2 md:top-1/2 md:-left-6 md:bottom-0 ">8</span>
                         <span
-                              class="md:absolute text-black/90 bottom-2/3 md:min-h-[12vh] md:min-w-[40%] text-center px-4 pt-2 text-2xl inline-block -right-35 rounded-[20px] content-center font-black md:text-white md:bg-[#0E87CC]">Financial
+                              data-aos="flip-left" duration="1000" class="md:absolute text-black/90 bottom-2/3 md:min-h-[12vh] md:min-w-[40%] text-center px-4 pt-2 text-2xl inline-block -right-35 rounded-[20px] content-center font-black md:text-white md:bg-[#0E87CC]">Financial
                             Risk
                             Management</span>
                     </div>
@@ -983,9 +983,9 @@
                      class="relative flex flex-col items-center  md:max-w-[60%] lg:max-w-[60%] mx-auto md:px-8 py-4 rounded-[20px] bg-white">
                     <div class=flex>
                         <span
-                              class="w-[20px] h-[20px] md:text-4xl font-extrabold bg-[#132272] text-white px-5 py-5  flex items-center justify-center rounded-[50%] md:min-w-[100px] md:min-h-[100px] text-center md:absolute bottom-1/6 left-2 md:top-1/2 md:-left-6 md:bottom-0 ">9</span>
+                              data-aos="flip-left" duration="1000" class="w-[20px] h-[20px] md:text-4xl font-extrabold bg-[#132272] text-white px-5 py-5  flex items-center justify-center rounded-[50%] md:min-w-[100px] md:min-h-[100px] text-center md:absolute bottom-1/6 left-2 md:top-1/2 md:-left-6 md:bottom-0 ">9</span>
                         <span
-                              class="md:absolute text-black/90 bottom-2/3 md:min-h-[12vh] md:min-w-[40%] text-center px-4 pt-2 text-2xl inline-block -right-35 rounded-[20px] content-center font-black md:text-white md:bg-[#0E87CC]">Long-Term
+                              data-aos="flip-left" duration="1000" class="md:absolute text-black/90 bottom-2/3 md:min-h-[12vh] md:min-w-[40%] text-center px-4 pt-2 text-2xl inline-block -right-35 rounded-[20px] content-center font-black md:text-white md:bg-[#0E87CC]">Long-Term
                             Financial Vision</span>
                     </div>
                     <ul class="list-disc list-inside space-y-2 font-extrabold text-black/80">
@@ -1010,3 +1010,6 @@
         </div>
     </section>
 </x-main-layout>
+<script>
+    AOS.init()
+</script>

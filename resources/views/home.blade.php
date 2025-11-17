@@ -80,12 +80,14 @@
     </section>
 
     {{-- What will build --}}
-    <section class="min-h-screen bg-linear-to-b from-[#1A2D98E5] to-[#142244] pt-30 pb-10">
+    <section class="min-h-[130vh] bg-linear-to-b from-[#1A2D98E5] to-[#142244] pt-30 pb-10">
         <div class="space-y-25">
-            <h1 class="font-[Calligraffitti] text-6xl text-white text-center">What we will be building</h1>
-            <div class="md:max-w-[1000px] grid md:grid-cols-3 mx-auto gap-15">
-                <div
-                     class="border border-white/10 bg-[url(/public/assets/images/bg-heart.svg)] min-h-[30vh] bg-no-repeat  bg-contain bg-center bg-[#f3f3f3] rounded-[20px] p-6">
+            <h1 class="font-[Calligraffitti] text-6xl text-white text-center" data-aos="fade-up"
+                data-aos-duration="1000">What we will be
+                building</h1>
+            <div class="md:max-w-[1000px] grid md:grid-cols-2 lg:grid-cols-3 mx-auto gap-15">
+                <div class="border border-white/10 bg-[url(/public/assets/images/bg-heart.svg)] min-h-[30vh] bg-no-repeat  bg-contain bg-center bg-[#f3f3f3] rounded-[20px] p-6"
+                     data-aos="fade-up" data-aos-duration="1500">
                     <img class="block ml-auto w-[20px]" src="{{ asset('assets/images/arrow-icon.svg') }}"
                          alt="Arrow pointer">
                     <div class="space-y-6">
@@ -96,8 +98,8 @@
 
                 </div>
 
-                <div
-                     class="border border-white/10 bg-[url(/public/assets/images/bg-six-nine.svg)] min-h-[30vh] bg-no-repeat  bg-contain bg-center bg-[#f3f3f3] rounded-[20px] p-6">
+                <div class="border border-white/10 bg-[url(/public/assets/images/bg-six-nine.svg)] min-h-[30vh] bg-no-repeat  bg-contain bg-center bg-[#f3f3f3] rounded-[20px] p-6"
+                     data-aos="fade-up" data-aos-duration="1500">
                     <img class="block ml-auto w-[20px]" src="{{ asset('assets/images/arrow-icon.svg') }}"
                          alt="Arrow pointer">
                     <div class="space-y-6">
@@ -107,8 +109,8 @@
 
                 </div>
 
-                <div
-                     class="border border-white/10 bg-[url(/public/assets/images/bg-doctors-surgery.svg)] min-h-[30vh] bg-no-repeat  bg-contain bg-center bg-[#f3f3f3] rounded-[20px] p-6">
+                <div class="border border-white/10 bg-[url(/public/assets/images/bg-doctors-surgery.svg)] min-h-[30vh] bg-no-repeat  bg-contain bg-center bg-[#f3f3f3] rounded-[20px] p-6"
+                     data-aos="fade-up" data-aos-duration="1500">
                     <img class="block ml-auto w-[20px]" src="{{ asset('assets/images/arrow-icon.svg') }}"
                          alt="Arrow pointer">
                     <div class="space-y-6">
@@ -120,8 +122,8 @@
 
                 </div>
 
-                <div
-                     class="border border-white/10 bg-[url(/public/assets/images/bg-ambulance-light.svg)] min-h-[30vh] bg-no-repeat  bg-contain bg-center bg-[#f3f3f3] rounded-[20px] p-6">
+                <div class="border border-white/10 bg-[url(/public/assets/images/bg-ambulance-light.svg)] min-h-[30vh] bg-no-repeat  bg-contain bg-center bg-[#f3f3f3] rounded-[20px] p-6"
+                     data-aos="fade-up" data-aos-duration="1500">
                     <img class="block ml-auto w-[20px]" src="{{ asset('assets/images/arrow-icon.svg') }}"
                          alt="Arrow pointer">
                     <div class="space-y-6">
@@ -132,8 +134,8 @@
 
                 </div>
 
-                <div
-                     class="border border-white/10 bg-[url(/public/assets/images/bg-women-child.svg)] min-h-[30vh] bg-no-repeat  bg-contain bg-center bg-[#f3f3f3] rounded-[20px] p-6">
+                <div class="border border-white/10 bg-[url(/public/assets/images/bg-women-child.svg)] min-h-[30vh] bg-no-repeat  bg-contain bg-center bg-[#f3f3f3] rounded-[20px] p-6"
+                     data-aos="fade-up" data-aos-duration="1500">
                     <img class="block ml-auto w-[20px]" src="{{ asset('assets/images/arrow-icon.svg') }}"
                          alt="Arrow pointer">
                     <div class="space-y-6">
@@ -144,8 +146,8 @@
 
                 </div>
 
-                <div
-                     class="border border-white/10 bg-[url(/public/assets/images/bg-teaching.svg)] min-h-[30vh] bg-no-repeat  bg-contain bg-center bg-[#f3f3f3] rounded-[20px] p-6">
+                <div class="border border-white/10 bg-[url(/public/assets/images/bg-teaching.svg)] min-h-[30vh] bg-no-repeat  bg-contain bg-center bg-[#f3f3f3] rounded-[20px] p-6"
+                     data-aos="fade-up" data-aos-duration="1500">
                     <img class="block ml-auto w-[20px]" src="{{ asset('assets/images/arrow-icon.svg') }}"
                          alt="Arrow pointer">
                     <div class="space-y-6">
@@ -209,11 +211,13 @@
     </section>
 
     {{-- why the hospital matters --}}
-    <section class="min-h-screen">
-        <div class="md:max-w-[1150px] mx-auto pt-25">
-            <div class="space-y-8 md:max-w-[1024px] mx-auto">
-                <h1 class="font-[Calligraffitti] text-6xl text-center">Why this hospital matters?</h1>
-                <p class="leading-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    <section class="min-h-[120vh]">
+        <div class="lg:max-w-[1150px] mx-auto pt-25 pb-10 lg:pb-0">
+            <div class="flex flex-col items-center space-y-8 md:max-w-[1024px] mx-auto">
+                <h1 class="font-[Calligraffitti] text-6xl" data-aos="fade-up" data-aos-duration="1000">
+                    Why this hospital matters?</h1>
+                <p class=" w-[80%] mx-auto leading-8" data-aos="fade-up" data-aos-duration="1500">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut
                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                     laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
@@ -221,8 +225,8 @@
                     cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
             </div>
             <div
-                 class="md:bg-[url(/public/assets/images/female_doctor.svg)] min-h-[90vh] bg-contain bg-no-repeat bg-center grid md:grid-cols-2 md:pt-30 w-full md:pl-20 gap-y-16">
-                <div class="space-y-4">
+                 class="lg:bg-[url(/public/assets/images/female_doctor.svg)] min-h-[90vh] bg-contain bg-no-repeat bg-center grid lg:grid-cols-2 md:pt-30 w-full md:pl-20 gap-y-16">
+                <div class="space-y-4" data-aos="fade-up" data-aos-duration="1500">
                     <div class="flex space-x-4 items-center">
                         <div
                              class="w-[50px] h-[50px] rounded-[50%] bg-[#ADD8E6] flex items-center justify-center">
@@ -232,12 +236,12 @@
                         <h3 class="text-lg font-bold max-w-[300px]">Raises the standard of healthcare in West
                             Africa</h3>
                     </div>
-                    <p class="w-[400px] leading-6">Introducing world-class medical infrastructure, advanced
+                    <p class="lg:w-[400px] leading-6">Introducing world-class medical infrastructure, advanced
                         technologies, and clinical
                         expertise that redefine what is possible in regional healthcare delivery.</p>
                 </div>
 
-                <div class="space-y-4 ml-auto">
+                <div class="space-y-4 ml-auto" data-aos="fade-up" data-aos-duration="1500">
                     <div class="flex space-x-4 items-center">
                         <div
                              class="w-[50px] h-[50px] rounded-[50%] bg-[#ADD8E6] flex items-center justify-center">
@@ -247,12 +251,12 @@
                         <h3 class="text-lg font-bold max-w-[300px]">Reduces the need for patients to travel
                             abroad for treatment</h3>
                     </div>
-                    <p class="w-[400px] leading-6 pl-4">by providing the same level of specialized care and
+                    <p class="lg:w-[400px] leading-6 pl-4">by providing the same level of specialized care and
                         medical excellence locally, ensuring families can access lifesaving procedures without
                         the financial and emotional strain of overseas travel.</p>
                 </div>
 
-                <div class="space-y-4">
+                <div class="space-y-4" data-aos="fade-up" data-aos-duration="1500">
                     <div class="flex space-x-4 items-center">
                         <div
                              class="w-[50px] h-[50px] rounded-[50%] bg-[#ADD8E6] flex items-center justify-center">
@@ -262,12 +266,12 @@
                         <h3 class="text-lg font-bold max-w-[300px]">Delivers highly specialized and complex
                             medical services</h3>
                     </div>
-                    <p class="w-[400px] leading-6">Including robotic-assisted surgeries, organ transplants, and
+                    <p class="lg:w-[400px] leading-6">Including robotic-assisted surgeries, organ transplants, and
                         advanced cancer care, supported by multidisciplinary teams and cutting-edge research.
                     </p>
                 </div>
 
-                <div class="space-y-4 ml-auto">
+                <div class="space-y-4 ml-auto" data-aos="fade-up" data-aos-duration="1500">
                     <div class="flex space-x-4 items-center">
                         <div
                              class="w-[50px] h-[50px] rounded-[50%] bg-[#ADD8E6] flex items-center justify-center">
@@ -277,7 +281,7 @@
                         <h3 class="text-lg font-bold max-w-[300px]">Positions Ghana as a premier healthcare hub
                         </h3>
                     </div>
-                    <p class="w-[400px] leading-6 pl-4">in Africa by attracting international patients,
+                    <p class="lg:w-[400px] leading-6 pl-4">in Africa by attracting international patients,
                         top-tier medical professionals, and global research partnerships that drive innovation
                         and strengthen the country’s reputation in medicine and science.</p>
                 </div>
@@ -290,7 +294,7 @@
             <div class="text-white flex flex-col justify-start items-center space-y-2 md:space-y-4">
                 <img class="" src="{{ asset('/assets/images/vaadin_doctor.svg') }}" alt="Vaadin Doctor">
                 <div class="">
-                    <p class="text-4xl font-extrabold text-center">1000+</p>
+                    <p class="text-4xl font-extrabold text-center counter" data-target="1000">0</p>
                     <hr class="w-[70px] h-[5px] border-none bg-white mx-auto mt-2">
                 </div>
                 <p class="max-w-[130px] text-center">Profesional
@@ -300,7 +304,7 @@
             <div class="text-white flex flex-col justify-start items-center space-y-2 md:space-y-4">
                 <img class="" src="{{ asset('/assets/images/wpf_medical-doctor.svg') }}" alt="Medical Doctor">
                 <div class="">
-                    <p class="text-4xl font-extrabold text-center">1500+</p>
+                    <p class="text-4xl font-extrabold text-center counter" data-target="1500">1500+</p>
                     <hr class="w-[70px] h-[5px] border-none bg-white mx-auto mt-2">
                 </div>
                 <p class="max-w-[130px] text-center">Profesional
@@ -311,7 +315,7 @@
                 <img class="" src="{{ asset('/assets/images/solar_hospital-bold-duotone.svg') }}"
                      alt="Medical Doctor">
                 <div class="">
-                    <p class="text-4xl font-extrabold text-center">5</p>
+                    <p class="text-4xl font-extrabold text-center counter" data-target="5"></p>
                     <hr class="w-[70px] h-[5px] border-none bg-white mx-auto mt-2">
                 </div>
                 <p class="max-w-[130px] text-center">Modern
@@ -322,7 +326,7 @@
                 <img class="" src="{{ asset('/assets/images/icon-park_hospital-bed.svg') }}"
                      alt="Medical Doctor">
                 <div class="">
-                    <p class="text-4xl font-extrabold text-center">1000+</p>
+                    <p class="text-4xl font-extrabold text-center counter" data-target="1000">1000+</p>
                     <hr class="w-[70px] h-[5px] border-none bg-white mx-auto mt-2">
                 </div>
                 <p class="max-w-[130px] text-center">Quality
@@ -333,7 +337,7 @@
                 <img class="" src="{{ asset('/assets/images/medical-icon_i-ambulance.svg') }}"
                      alt="Medical Doctor">
                 <div class="">
-                    <p class="text-4xl font-extrabold text-center">1000+</p>
+                    <p class="text-4xl font-extrabold text-center counter" data-target="1000">0</p>
                     <hr class="w-[70px] h-[5px] border-none bg-white mx-auto mt-2">
                 </div>
                 <p class="max-w-[130px] text-center">Modern
@@ -342,7 +346,7 @@
         </div>
     </section>
 
-    <section class="md:max-w-[1100px] min-h-[350vh] md:min-h-[130vh] py-20 mx-auto">
+    <section class="md:max-w-[1100px] min-h-screen py-20 mx-auto">
         <div class="min-h-[60vh] border">
             <div class="md:flex md:justify-between">
                 <div class="py-10 px-15 space-y-10">
@@ -446,3 +450,64 @@
         </div>
     </section>
 </x-main-layout>
+<script>
+    AOS.init();
+
+    document.addEventListener("DOMContentLoaded", () => {
+
+        const counters = document.querySelectorAll(".counter");
+
+        function animateCounter(el) {
+            const target = +el.getAttribute("data-target");
+            const duration = 1500; // ms
+            const frameRate = 1000 / 60;
+            const totalFrames = duration / frameRate;
+            let frame = 0;
+
+            function update() {
+                frame++;
+                const progress = frame / totalFrames;
+                const current = Math.floor(progress * target);
+
+                if (target === 5) {
+                    el.textContent = current.toLocaleString();
+
+                } else {
+                    el.textContent = current.toLocaleString() + "+";
+
+                }
+
+
+                if (frame < totalFrames) {
+                    requestAnimationFrame(update);
+                } else {
+                    if (target === 5) {
+                        el.textContent = target.toLocaleString();
+
+
+                    } else {
+                        el.textContent = target.toLocaleString() + "+";
+
+                    }
+                }
+            }
+
+            update();
+        }
+
+        // IntersectionObserver to detect visibility
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounter(entry.target);
+                    obs.unobserve(entry.target); // run only once
+                }
+            });
+        }, {
+            threshold: 0.4 // starts when 40% of the element is visible
+        });
+
+        counters.forEach(counter => observer.observe(counter));
+
+    });
+</script>
