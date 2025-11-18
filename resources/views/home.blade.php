@@ -1,17 +1,14 @@
 <x-main-layout>
     <section class="min-h-screen bg-[#B8BDCA]  md:pt-[100px]">
         <!-- Slider main container -->
-        <div>
-
-        </div>
         <div class="hero-swiper swiper h-screen relative">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper ">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <div class="flex md:max-w-[1024px] mx-auto items-center h-[80vh]">
-                        <div class=" md:max-w-md pt-16">
-                            <h1 class="font-[Calligraffitti] text-[8rem]">Vision</h1>
+                    <div class="flex w-[90%] md:max-w-[1024px] mx-auto items-center h-[80vh]">
+                        <div class=" md:max-w-md pt-45 space-y-8">
+                            <h1 class="font-[Calligraffitti] text-8xl md:text-[8rem]">Vision</h1>
                             <p class="leading-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Temporibus, debitis
                                 dignissimos
@@ -25,16 +22,16 @@
                                 fuga vel eligendi vero tenetur sequi est quibusdam.</p>
                         </div>
                         <div class="absolute right-0 -top-[50px]">
-                            <img class="h-[800px] w-[800px]" src="{{ asset('/assets/images/doctors_hifive.svg') }}"
+                            <img class="h-[800px] w-[800px] hidden md:block" src="{{ asset('/assets/images/doctors_hifive.svg') }}"
                                  alt="Doctors having a group Hi-five">
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="flex md:max-w-[1024px] mx-auto items-center h-[80vh]">
+                    <div class="flex w-[90%] md:max-w-[1024px] mx-auto items-center h-[80vh]">
                         <div class=" md:max-w-md pt-16 pb-10 space-y-2 md:space-y-4">
-                            <h1 class="font-[Calligraffitti] text-[8rem]">Mission</h1>
-                            <div class="w-[95%] ">
+                            <h1 class="font-[Calligraffitti] text-8xl md:text-[8rem]">Mission</h1>
+                            <div class="md:w-[95%] ">
                                 <div
                                      class="bg-[#192A5599] flex justify-between items-center px-8 py-2 rounded-[20px]">
                                     <img class="block w-[40px]" src="{{ asset('/assets/images/check.svg') }}"
@@ -42,7 +39,7 @@
                                     <p class="w-[70%] text-white">Provide world-class surgical and medical care.</p>
                                 </div>
                             </div>
-                            <div class="w-[95%]">
+                            <div class="md:w-[95%]">
                                 <div
                                      class="bg-[#192A5599] flex justify-between items-center px-8 py-2 rounded-[20px]">
                                     <img class="block w-[40px]" src="{{ asset('/assets/images/check.svg') }}"
@@ -51,7 +48,7 @@
                                         research, and excellence.</p>
                                 </div>
                             </div>
-                            <div class="w-[95%]">
+                            <div class="md:w-[95%]">
                                 <div
                                      class="bg-[#192A5599] flex justify-between items-center px-8 py-2 rounded-[20px]">
                                     <img class="block w-[40px]" src="{{ asset('/assets/images/check.svg') }}"
@@ -62,7 +59,7 @@
                             </div>
                         </div>
                         <div class="absolute right-0 -top-[40px]">
-                            <img class="h-[790px] w-[800px]"
+                            <img class="h-[790px] w-[800px] hidden md:block"
                                  src="{{ asset('/assets/images/doctors_discussion_table.svg') }}"
                                  alt="Doctors having a group Hi-five">
                         </div>
