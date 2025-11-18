@@ -19,7 +19,7 @@
                 </div>
             </div>
             <button class="md:hidden" id="menu">
-                <i class="fa-solid fa-bars fa-xl"></i>
+                <i class="fa-solid fa-bars fa-xl" id="hamburgerIcon"></i>
             </button>
             <div class="absolute top-0 left-0 w-full bg-black/60 h-screen z-50 hidden " id="mobile-view--navbar">
                 <div class=" bg-linear-to-b from-[#142244] to-[#1A2D98E5] h-full w-[80%] ml-auto" id="navContent">
@@ -53,6 +53,7 @@
         const mobileNavbar = document.getElementById('mobile-view--navbar')
         const closeMenu = document.getElementById('mobile-view--navbar')
         const navContent = document.getElementById('navContent')
+        const hamburgerIcon = document.getElementById('hamburgerIcon')
 
         menu.addEventListener('click', function() {
             mobileNavbar.classList.remove("hidden")
@@ -70,8 +71,12 @@
             const navbar = document.getElementById('navbar')
             if (window.scrollY > 60) {
                 navbar.classList.add('bg-[#192A55]')
+                hamburgerIcon.classList.add('text-white')
+
+
             } else {
                 navbar.classList.remove('bg-[#192A55]')
+                hamburgerIcon.classList.remove('text-white')
             }
         })
     </script>
