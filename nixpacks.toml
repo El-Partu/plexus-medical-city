@@ -3,7 +3,11 @@ nixPkgs = ["...", "python311Packages.supervisor"]
 
 [phases.build]
 cmds = [
-    "npm run build:ssr",,
+    "npm run build:ssr",
+    "composer install --no-dev --optimize-autoloader",
+    "npm install",
+    "npm run build",
+    "php artisan migrate --force"
     "mkdir -p /etc/supervisor/conf.d/",
     "cp /assets/worker-*.conf /etc/supervisor/conf.d/",
     "cp /assets/supervisord.conf /etc/supervisord.conf",
