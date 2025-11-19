@@ -1,0 +1,67 @@
+{
+  "public/assets/images/bg-ambulance-light.svg": {
+    "file": "assets/bg-ambulance-light-DcZMS70p.svg",
+    "src": "public/assets/images/bg-ambulance-light.svg"
+  },
+  "public/assets/images/bg-doctors-surgery.svg": {
+    "file": "assets/bg-doctors-surgery-BW7QdL82.svg",
+    "src": "public/assets/images/bg-doctors-surgery.svg"
+  },
+  "public/assets/images/bg-heart.svg": {
+    "file": "assets/bg-heart-BLO2Opuj.svg",
+    "src": "public/assets/images/bg-heart.svg"
+  },
+  "public/assets/images/bg-six-nine.svg": {
+    "file": "assets/bg-six-nine-DUmmsA8m.svg",
+    "src": "public/assets/images/bg-six-nine.svg"
+  },
+  "public/assets/images/bg-teaching.svg": {
+    "file": "assets/bg-teaching-APfJzXgI.svg",
+    "src": "public/assets/images/bg-teaching.svg"
+  },
+  "public/assets/images/bg-women-child.svg": {
+    "file": "assets/bg-women-child-vUj4qL4Z.svg",
+    "src": "public/assets/images/bg-women-child.svg"
+  },
+  "public/assets/images/contact_us.svg": {
+    "file": "assets/contact_us-4hjvPdB-.svg",
+    "src": "public/assets/images/contact_us.svg"
+  },
+  "public/assets/images/d327099868ff2a0e580ee2a61d2c36c5-removebg-preview1.svg": {
+    "file": "assets/d327099868ff2a0e580ee2a61d2c36c5-removebg-preview1-BHMlLgOy.svg",
+    "src": "public/assets/images/d327099868ff2a0e580ee2a61d2c36c5-removebg-preview1.svg"
+  },
+  "public/assets/images/doctor_bg.svg": {
+    "file": "assets/doctor_bg-D16jbbl-.svg",
+    "src": "public/assets/images/doctor_bg.svg"
+  },
+  "public/assets/images/female_doctor.svg": {
+    "file": "assets/female_doctor-BXi9Zr8S.svg",
+    "src": "public/assets/images/female_doctor.svg"
+  },
+  "public/assets/images/plexus_city_day.jpg": {
+    "file": "assets/plexus_city_day-aGa4H7s8.jpg",
+    "src": "public/assets/images/plexus_city_day.jpg"
+  },
+  "public/assets/images/roadm2222ap.svg.svg": {
+    "file": "assets/roadm2222ap.svg-D9uyfXYk.svg",
+    "src": "public/assets/images/roadm2222ap.svg.svg"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-BiqyNqXX.css",
+    "src": "resources/css/app.css",
+    "isEntry": true,
+    "names": [
+      "app.css"
+    ]
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-DmaNstKk.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "css": [
+      "assets/app-DDQ4uUkz.css"
+    ]
+  }
+}
