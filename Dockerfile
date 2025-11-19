@@ -55,7 +55,7 @@ RUN chown -R www-data:www-data /var/www
 WORKDIR /var/www
 
 # Expose port for Railway
-EXPOSE 80
+EXPOSE 8080
 
 # Run migrations automatically at startup
 CMD php artisan migrate --force && apache2-foreground
