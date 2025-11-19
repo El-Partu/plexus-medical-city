@@ -20,6 +20,10 @@ RUN apt-get update && apt-get install -y \
 # Enable Apache mod_rewrite
 RUN a2enmod rewrite
 
+# Enable mod_rewrite and set ServerName
+RUN a2enmod rewrite && echo "ServerName localhost" >> /etc/apache2/apache2.conf
+
+
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
