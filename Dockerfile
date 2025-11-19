@@ -1,52 +1,35 @@
-# Use official PHP image with Apache
-FROM php:8.2-apache
+FROM unit:1.34.1-php8.3
 
-# Set working directory
+RUN apt update && apt install -y \
+    curl unzip git libicu-dev libzip-dev libpng-dev libjpeg-dev libfreetype6-dev libssl-dev \
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install -j$(nproc) pcntl opcache pdo pdo_mysql intl zip gd exif ftp bcmath \
+    && pecl install redis \
+    && docker-php-ext-enable redis
+
+RUN echo "opcache.enable=1" > /usr/local/etc/php/conf.d/custom.ini \
+    && echo "opcache.jit=tracing" >> /usr/local/etc/php/conf.d/custom.ini \
+    && echo "opcache.jit_buffer_size=256M" >> /usr/local/etc/php/conf.d/custom.ini \
+    && echo "memory_limit=512M" > /usr/local/etc/php/conf.d/custom.ini \
+    && echo "upload_max_filesize=64M" >> /usr/local/etc/php/conf.d/custom.ini \
+    && echo "post_max_size=64M" >> /usr/local/etc/php/conf.d/custom.ini
+
+COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
+
 WORKDIR /var/www/html
 
-# Install system dependencies
-RUN apt-get update && apt-get install -y \
-    git \
-    unzip \
-    libzip-dev \
-    libpng-dev \
-    libonig-dev \
-    libxml2-dev \
-    curl \
-    npm \
-    nodejs \
-    && docker-php-ext-install pdo_mysql mbstring zip exif pcntl bcmath gd
+RUN mkdir -p /var/www/html/storage /var/www/html/bootstrap/cache
 
-# Enable Apache mod_rewrite
-RUN a2enmod rewrite
+RUN chown -R unit:unit /var/www/html/storage bootstrap/cache && chmod -R 775 /var/www/html/storage
 
-# Enable mod_rewrite and set ServerName
-RUN a2enmod rewrite && echo "ServerName localhost" >> /etc/apache2/apache2.conf
-
-
-# Install Composer
-COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
-
-# Copy application code
 COPY . .
 
-# Install PHP dependencies
-RUN composer install --no-interaction --prefer-dist --optimize-autoloader
+RUN chown -R unit:unit storage bootstrap/cache && chmod -R 775 storage bootstrap/cache
 
-# Install Node dependencies and build assets
-RUN npm install
-RUN npm run build
+RUN composer install --prefer-dist --optimize-autoloader --no-interaction
 
-# Set permissions
-RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
+COPY unit.json /docker-entrypoint.d/unit.json
 
-# Copy entrypoint script
-COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
-RUN chmod +x /usr/local/bin/docker-entrypoint.sh
+EXPOSE 8000
 
-# Expose port 80
-EXPOSE 8080
-
-# Use custom entrypoint
-ENTRYPOINT ["docker-entrypoint.sh"]
-CMD ["apache2-foreground"]
+CMD ["unitd", "--no-daemon"]
