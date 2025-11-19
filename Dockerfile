@@ -1,61 +1,46 @@
-# ----------------------------
-# Stage 1: Build assets + vendor
-# ----------------------------
-FROM php:8.3-fpm AS build
+FROM php:8.3-apache
 
-# Install system dependencies
+# Install dependencies
 RUN apt-get update && apt-get install -y \
-    unzip \
     git \
-    curl \
-    libpng-dev \
-    libonig-dev \
-    libzip-dev \
     zip \
-    nodejs \
-    npm \
-    && docker-php-ext-install pdo_mysql zip
+    unzip \
+    curl \
+    nano \
+    default-mysql-client
+
+# Enable Apache mod_rewrite
+RUN a2enmod rewrite
+
+# Set ServerName to fix warning
+RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
 # Install Composer
-COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-# Set working directory
-WORKDIR /var/www
+# Install Node.js
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+    && apt-get install -y nodejs
 
-# Copy app files
-COPY . .
+# Copy application
+COPY . /var/www/html
+WORKDIR /var/www/html
 
 # Install PHP dependencies
 RUN composer install --no-dev --optimize-autoloader
 
-# Install JS dependencies and build assets
+# Install Node dependencies and build assets
 RUN npm install && npm run build
 
-# ----------------------------
-# Stage 2: Production Image
-# ----------------------------
-FROM php:8.3-apache
+# Set permissions
+RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
 
-# Install required PHP extensions
-RUN apt-get update && apt-get install -y \
-    libpng-dev \
-    libzip-dev \
-    && docker-php-ext-install pdo_mysql zip
+# Expose web port
+EXPOSE 80
 
-# Enable Apache rewrite
-RUN a2enmod rewrite
+# Run migrations (optional but recommended)
+RUN php artisan config:cache
+RUN php artisan route:cache
+RUN php artisan view:cache
 
-# Copy Laravel files from build
-COPY --from=build /var/www /var/www
-
-# Set correct permissions
-RUN chown -R www-data:www-data /var/www
-
-# Set the working directory
-WORKDIR /var/www
-
-# Expose port for Railway
-EXPOSE 8080
-
-# Run migrations automatically at startup
-CMD php artisan migrate --force && apache2-foreground
+CMD ["apache2-foreground"]
