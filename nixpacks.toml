@@ -1,28 +1,23 @@
 [phases.setup]
-# Install system packages needed for Laravel + Node/Vite
 packages = ["php", "php-mbstring", "php-bcmath", "php-curl", "php-mysql", "composer", "nodejs", "npm", "git"]
 
 [phases.install]
-# Install backend and frontend dependencies
 commands = [
   "composer install --no-dev --optimize-autoloader",
   "npm install"
 ]
 
 [phases.build]
-# Build frontend assets and run migrations
 commands = [
   "npm run build",
   "php artisan migrate --force"
-  "npm run dev"
 ]
 
 [phases.start]
-# Serve Laravel on the port provided by Railway
-command = "php artisan serve --host 0.0.0.0 --port $PORT"
+# Remove artisan serve; Railway/Nixpacks will serve via Apache/Nginx
+command = "apache2-foreground"
 
 [env]
-# Use Railway environment variable for port
 PORT = "8080"
 APP_ENV = "production"
 APP_DEBUG = "false"
