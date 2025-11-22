@@ -1,4 +1,4 @@
-<footer class="min-h-[150vh] md:min-h-screen flex flex-col justify-end">
+<footer class="min-h-[180vh] md:min-h-[120vh] flex flex-col justify-end">
     <div>
         <div class="bg-[#1A2D98] pt-70 min-h-[65vh] relative md:pt-60 pb-10">
             <div

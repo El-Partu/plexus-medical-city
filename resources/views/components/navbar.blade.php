@@ -1,4 +1,4 @@
-    <nav class="mx-auto py-6 md:py-6 fixed w-full left-0 z-10 top-0" id="navbar">
+    <nav class="mx-auto py-6 md:py-6 fixed w-full left-0 z-80 top-0" id="navbar">
         <div class=" px-6 lg:w-[1024px] flex justify-between items-center mx-auto">
 
             <span class="border">

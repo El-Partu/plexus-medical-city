@@ -8,7 +8,7 @@
                     <div class="border py-6 px-3 xl:w-[50%] xl:min-h-[80vh] xl:border-none">
                         <form class="xl:w-[85%] mx-auto space-y-8" method="" action="">
                             <h1 class="text-left text-2xl font-extrabold">Contact</h1>
-                            <div class="w-[78%] space-y-12">
+                            <div class="md:w-[78%] space-y-12">
                                 <div class="space-y-12 md:flex space-x-10">
                                     <div class="flex flex-col text-sm space-y-6">
                                         <label class="uppercase" for="firstname">First Name <span class="text-red-600 text-lg ml-2">*</span></label>
@@ -270,7 +270,9 @@
     </section>
 </x-main-layout>
 <script>
-    AOS.init()
+    AOS.init({
+        once:true
+    })
     const textarea = document.getElementById("autoResize");
 
     textarea.addEventListener("input", function() {

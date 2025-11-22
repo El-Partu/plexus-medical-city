@@ -347,7 +347,7 @@
         <div class="min-h-[60vh] border">
             <div class="md:flex md:justify-between">
                 <div class="py-10 md:px-15 space-y-10">
-                    <h1 class="text-3xl font-bold max-w-[300px] text-center">
+                    <h1 class="text-3xl font-bold md:max-w-[300px] text-center">
                         Frequently Asked
                         Questions</h1>
                     <div class="flex flex-col items-center space-y-6">
@@ -448,7 +448,9 @@
     </section>
 </x-main-layout>
 <script>
-    AOS.init();
+    AOS.init({
+        once:true
+    })
 
     document.addEventListener("DOMContentLoaded", () => {
 
