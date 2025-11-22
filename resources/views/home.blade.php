@@ -5,7 +5,7 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper ">
                 <!-- Slides -->
-                <div class="swiper-slide">
+                <div class="swiper-slide md:bg-[url(/public/assets/images/doctors_hifive.svg)] bg-bottom-right bg-no-repeat bg-contain">
                     <div class="flex w-[90%] md:max-w-[1024px] mx-auto items-center h-[80vh]">
                         <div class=" md:max-w-md pt-45 space-y-8">
                             <h1 class="font-[Calligraffitti] text-8xl md:text-[8rem]">Vision</h1>
@@ -21,13 +21,13 @@
                                 corporis
                                 fuga vel eligendi vero tenetur sequi est quibusdam.</p>
                         </div>
-                        <div class="absolute right-0 -top-[50px]">
+                        {{-- <div class="absolute right-0 -top-[50px]">
                             <img class="h-[800px] w-[800px] hidden md:block" src="{{ asset('/assets/images/doctors_hifive.svg') }}"
                                  alt="Doctors having a group Hi-five">
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide md:bg-[url(/public/assets/images/doctors_discussion_table.svg)] bg-bottom-right bg-no-repeat bg-contain">
                     <div class="flex w-[90%] md:max-w-[1024px] mx-auto items-center h-[80vh]">
                         <div class=" md:max-w-md pt-16 pb-10 space-y-2 md:space-y-4">
                             <h1 class="font-[Calligraffitti] text-8xl md:text-[8rem]">Mission</h1>
@@ -58,11 +58,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="absolute right-0 -top-[40px]">
+                        {{-- <div class="absolute right-0 -top-[40px]">
                             <img class="h-[790px] w-[800px] hidden md:block"
                                  src="{{ asset('/assets/images/doctors_discussion_table.svg') }}"
                                  alt="Doctors having a group Hi-five">
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -78,7 +78,7 @@
 
     {{-- What will build --}}
     <section class="min-h-[130vh] bg-linear-to-b from-[#1A2D98E5] to-[#142244] pt-30 pb-10">
-        <div class="space-y-25">
+        <div class="space-y-25 px-6 lg:px-0">
             <h1 class="font-[Calligraffitti] text-6xl text-white text-center" data-aos="fade-up"
                 data-aos-duration="1000">What we will be
                 building</h1>
@@ -209,11 +209,11 @@
 
     {{-- why the hospital matters --}}
     <section class="min-h-[120vh]">
-        <div class="lg:max-w-[1150px] mx-auto pt-25 pb-10 lg:pb-0">
-            <div class="flex flex-col items-center space-y-8 md:max-w-[1024px] mx-auto">
-                <h1 class="font-[Calligraffitti] text-6xl" data-aos="fade-up" data-aos-duration="1000">
+        <div class=" px-6 lg:px-0 space-y-10 lg:max-w-[1150px] mx-auto pt-25 pb-10 lg:pb-0">
+            <div class="flex flex-col items-center space-y-10 md:max-w-[1024px] mx-auto">
+                <h1 class="font-[Calligraffitti] text-6xl text-center" data-aos="fade-up" data-aos-duration="1000">
                     Why this hospital matters?</h1>
-                <p class=" w-[80%] mx-auto leading-8" data-aos="fade-up" data-aos-duration="1500">Lorem ipsum dolor sit amet,
+                <p class="mx-auto leading-8" data-aos="fade-up" data-aos-duration="1500">Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut
                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -222,7 +222,7 @@
                     cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
             </div>
             <div
-                 class="lg:bg-[url(/public/assets/images/female_doctor.svg)] min-h-[90vh] bg-contain bg-no-repeat bg-center grid lg:grid-cols-2 md:pt-30 w-full md:pl-20 gap-y-16">
+                 class="lg:bg-[url(/public/assets/images/female_doctor.svg)] min-h-[90vh] bg-contain bg-no-repeat bg-center grid lg:grid-cols-2 md:pt-30 w-full md:px-10 lg:pl-20 gap-y-16">
                 <div class="space-y-4" data-aos="fade-up" data-aos-duration="1500">
                     <div class="flex space-x-4 items-center">
                         <div
@@ -343,10 +343,10 @@
         </div>
     </section>
 
-    <section class="md:max-w-[1100px] min-h-screen py-20 mx-auto">
+    <section class="md:max-w-[1100px] min-h-[130vh] md:min-h-screen py-20 mx-auto">
         <div class="min-h-[60vh] border">
             <div class="md:flex md:justify-between">
-                <div class="py-10 px-15 space-y-10">
+                <div class="py-10 md:px-15 space-y-10">
                     <h1 class="text-3xl font-bold max-w-[300px] text-center">
                         Frequently Asked
                         Questions</h1>
@@ -376,7 +376,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="md:w-[50%]  space-y-4 py-10 pr-15" id="accordion">
+                <div class="md:w-[50%]  space-y-4 py-10 pl-6" id="accordion">
                     <div class="border-b border-dashed pb-5">
                         <p
                            class="accordion-header w-full flex justify-between px-4 py-2font-semibold">
