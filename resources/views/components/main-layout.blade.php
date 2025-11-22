@@ -4,6 +4,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Futuristic medical city to provide healthcare for Ghanaian and west african">
+        <meta name="keywords" content="Plexua, medical, health, city, Ghana, west africa, medical center, research, donate, funding">
+        <meta name="author" content="Laurent Partu">
+
         <title>{{ config('app.name', 'Plexus Medical City') }}</title>
 
         <!-- Fonts -->
